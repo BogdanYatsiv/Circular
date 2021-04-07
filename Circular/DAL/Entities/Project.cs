@@ -26,5 +26,6 @@ namespace DAL.Identity
         public DateTime dateTime { get; set; }
 
         public List<User> User { get; set; }
+        public List<Commit> Commit { get; set; }
     }
 }
