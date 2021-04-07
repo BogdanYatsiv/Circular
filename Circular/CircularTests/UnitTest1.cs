@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace TestProject
+namespace CircularTests
 {
     public class UnitTest1
     {
