@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "3LuH2Lx4rxKjSDXZ1hGUD7JcIa294MWO4XNnCXUxAgo5PJxe3Lx3qNrR8oEA/d+eH7ZskyZaig4V9CNGpYoDcg==",
+  "dgSpecHash": "KQwjFViHzPdzf2EzGl3xdruTNgAxmUku0MQ+rKK/gKR66L8BwtNJ6Lo8P3zgTLNu5xx30AkzJFjL0YSDBHdaQQ==",
   "success": true,
   "projectFilePath": "D:\\STUDIE\\3_kurs\\курсова\\Circular\\Circular\\Circular\\Circular.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\andri\\.nuget\\packages\\coverlet.collector\\3.0.3\\coverlet.collector.3.0.3.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

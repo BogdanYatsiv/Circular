@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 
-namespace DAL.Identity
+namespace DAL.Entities
 {
     [Table("Commit")]
     class Commit
@@ -15,7 +15,8 @@ namespace DAL.Identity
         public int Id { get; set; }
 
         [Required]
-        public int project_id { get; set; }
+        public int ProjectId { get; set; }
+        public Project Project { get; set; }
 
         [Required]
         public string hash_code { get; set; }

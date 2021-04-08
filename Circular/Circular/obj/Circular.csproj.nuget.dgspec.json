@@ -52,61 +52,10 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.AspNetCore.Identity.UI": {
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "coverlet.collector": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[16.9.4, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.abstractions": {
-              "target": "Package",
-              "version": "[2.0.3, )"
-            },
-            "xunit.analyzers": {
-              "target": "Package",
-              "version": "[0.10.0, )"
-            },
-            "xunit.core": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.extensibility.core": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.extensibility.execution": {
-              "target": "Package",
-              "version": "[2.4.1, )"
+              "version": "[3.0.3, )"
             }
           },
           "imports": [
@@ -212,6 +161,12 @@
               "target": "Package",
               "version": "[16.9.4, )"
             },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.3, )"
+            },
             "xunit": {
               "target": "Package",
               "version": "[2.4.1, )"
@@ -303,61 +258,11 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.AspNetCore.Identity.UI": {
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
+            "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[16.9.4, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.abstractions": {
-              "target": "Package",
-              "version": "[2.0.3, )"
-            },
-            "xunit.analyzers": {
-              "target": "Package",
-              "version": "[0.10.0, )"
-            },
-            "xunit.core": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.extensibility.core": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.extensibility.execution": {
-              "target": "Package",
-              "version": "[2.4.1, )"
+              "version": "[3.0.3, )"
             }
           },
           "imports": [
