@@ -30,7 +30,7 @@ namespace Circular.Controllers
         {
             if (ModelState.IsValid)
             {
-                User user = new User { email = model.Email, name = model.Name};
+                User user = new User { Email = model.Email, UserName = model.Username};
 
                 // додаємо юзера в БД
                 var result = await _userManager.CreateAsync(user, model.Password);

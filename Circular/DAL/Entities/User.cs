@@ -12,21 +12,21 @@ namespace DAL.Entities
     [Table("User")]
     public class User : IdentityUser
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+    //    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    //    public int Id { get; set; }
 
-        [Required]
-        public string name { get; set; }
+    //    [Required]
+    //    public string name { get; set; }
 
-        [Required]
-        public string password { get; set; }
+    //    //[Required]
+    //    public string password { get; set; }
 
-        [Required]
-        [Index(IsUnique = true)]
-        public string email { get; set; }
+    //    [Required]
+    //    [Index(IsUnique = true)]
+    //    public string email { get; set; }
 
-        [Required]
-        public bool isAdmin { get; set; }
+    //    //[Required]
+    //    public bool isAdmin { get; set; }
 
         public List<Project> Project { get; set; }
         public List<Comment> Comment { get; set; }
