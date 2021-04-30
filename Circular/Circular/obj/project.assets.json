@@ -3499,9 +3499,7 @@
           "Microsoft.AspNetCore.SignalR": "1.1.0",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5",
-          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.5",
-          "Microsoft.NET.Test.Sdk": "16.9.4",
-          "Moq": "4.16.1"
+          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.5"
         },
         "compile": {
           "bin/placeholder/BLL.dll": {}
@@ -3522,9 +3520,7 @@
           "Microsoft.AspNetCore.SignalR": "1.1.0",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5",
-          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.5",
-          "Microsoft.NET.Test.Sdk": "16.9.4",
-          "Moq": "4.16.1"
+          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.5"
         },
         "compile": {
           "bin/placeholder/DAL.dll": {}
@@ -10867,6 +10863,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "BLL >= 1.0.0",
+      "DAL >= 1.0.0",
       "EntityFramework >= 6.4.4",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.5",
@@ -10885,19 +10882,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\andri\\.nuget\\packages\\": {}
+    "C:\\Users\\bogda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\STUDIE\\3_kurs\\курсова\\Circular\\Circular\\Circular\\Circular.csproj",
+      "projectUniqueName": "D:\\STUDY\\Kursova\\Circular\\Circular\\Circular\\Circular.csproj",
       "projectName": "Circular",
-      "projectPath": "D:\\STUDIE\\3_kurs\\курсова\\Circular\\Circular\\Circular\\Circular.csproj",
-      "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
-      "outputPath": "D:\\STUDIE\\3_kurs\\курсова\\Circular\\Circular\\Circular\\obj\\",
+      "projectPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\Circular\\Circular.csproj",
+      "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
+      "outputPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\Circular\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10911,8 +10908,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\STUDIE\\3_kurs\\курсова\\Circular\\Circular\\BLL\\BLL.csproj": {
-              "projectPath": "D:\\STUDIE\\3_kurs\\курсова\\Circular\\Circular\\BLL\\BLL.csproj"
+            "D:\\STUDY\\Kursova\\Circular\\Circular\\BLL\\BLL.csproj": {
+              "projectPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\BLL\\BLL.csproj"
+            },
+            "D:\\STUDY\\Kursova\\Circular\\Circular\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\DAL\\DAL.csproj"
             }
           }
         }
@@ -11012,7 +11012,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
