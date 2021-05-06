@@ -18,14 +18,14 @@ namespace DAL.Entities
     //    [Required]
     //    public string name { get; set; }
 
-    //    //[Required]
+    //    [Required]
     //    public string password { get; set; }
 
     //    [Required]
     //    [Index(IsUnique = true)]
     //    public string email { get; set; }
 
-    //    //[Required]
+    //    [Required]
     //    public bool isAdmin { get; set; }
 
         public List<Project> Project { get; set; }
