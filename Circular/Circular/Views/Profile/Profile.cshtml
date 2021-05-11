@@ -1,0 +1,167 @@
+﻿@model Circular.Models.ViewModels.ProfileViewModel
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<style>
+    .main {
+        display: flex;
+        position: relative;
+        margin-top: 10%;
+        margin-left: 7.5%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .main-edit {
+        display: flex;
+        position: relative;
+        margin-top: 10%;
+        margin-left: 15%;
+    }
+
+
+    .labels {
+        font-size: 20px;
+    }
+
+    .edit-info {
+        padding-right: 37.5%;
+        padding-left: 10%;
+    }
+
+    .avatar {
+        width: 80%;
+        height: 90%;
+    }
+
+    .personal-info {
+        margin-left: 10%;
+    }
+
+
+    .email-pos {
+        padding-top: 20%;
+        padding-bottom: 2rem;
+    }
+
+    .btn-primary {
+        margin-bottom: 1rem;
+        margin-left: 27%;
+    }
+
+    .btn-edit {
+        margin-bottom: 1rem;
+    }
+
+    .delete-acc {
+        padding-left: 60rem;
+        padding-right: 15rem;
+    }
+
+    .change-btns {
+        margin-top: 1rem;
+        margin-left: 47%;
+    }
+
+    .list-group {
+        max-height: 300px;
+        min-width: 200px;
+        margin-bottom: 10px;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .panel-primary {
+        margin-left: 15%;
+    }
+</style>
+<div class="main">
+
+    <div class="personal-info">
+
+        <img class="avatar" src="user.png" alt="avatar"><br />
+        <label class="labels" style="margin-left: 27%;" asp-for="Username">@User.Identity.Name</label><br />
+        <button style="border:0px; background-color: rgba(210, 213, 212, 0.7); color:rgb(0, 0, 0); " type="button" class="btn btn-primary">Edit profile</button><br>
+    </div>
+    <div class="panel-primary" id="result_panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">Project List</h3>
+        </div>
+        <div class="panel-body">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>
+                        Some project
+                    </strong>
+                </li>
+                <li class="list-group-item">
+                    <strong>
+                        Some project
+                    </strong>
+                </li>
+                <li class="list-group-item">
+                    <strong>
+                        Some project
+                    </strong>
+                </li>
+                <li class="list-group-item">
+                    <strong>
+                        Some project
+                    </strong>
+                </li>
+                <li class="list-group-item">
+                    <strong>
+                        Some project
+                    </strong>
+                </li>
+                <li class="list-group-item">
+                    <strong>
+                        Some project
+                    </strong>
+                </li>
+                <li class="list-group-item">
+                    <strong>
+                        Some project
+                    </strong>
+                </li>
+                <li class="list-group-item">
+                    <strong>
+                        Some project
+                    </strong>
+                </li>
+                <li class="list-group-item">
+                    <strong>
+                        Some project
+                    </strong>
+                <li class="list-group-item">
+                    <strong>
+                        Some project
+                    </strong>
+                </li>
+                <li class="list-group-item">
+                    <strong>
+                        Some project
+                    </strong>
+                </li>
+                <li class="list-group-item">
+                    <strong>
+                        Some project
+                    </strong>
+                </li>
+                <li class="list-group-item">
+                    <strong>
+                        Some project
+                    </strong>
+                </li>
+                <li class="list-group-item">
+                    <strong>
+                        Some project
+                    </strong>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
