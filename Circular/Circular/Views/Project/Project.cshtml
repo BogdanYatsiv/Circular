@@ -1,0 +1,174 @@
+﻿@model Circular.Models.ViewModels.ProjectViewModel
+
+@{
+    ViewData["Title"] = "Project";
+}
+
+<style>
+    .main {
+        display: flex;
+        position: relative;
+        margin-top: 12%;
+        margin-left: 7.5%;
+        font-family: Geneva, Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    .main-edit {
+        display: flex;
+        position: relative;
+        margin-top: 10%;
+        margin-left: 15%;
+    }
+
+
+    .labels {
+        font-size: 20px;
+    }
+
+    .edit-info {
+        padding-right: 37.5%;
+        padding-left: 10%;
+    }
+
+    .avatar {
+        width: 80%;
+        height: 90%;
+    }
+
+    .project-info {
+        margin-left: 10%;
+        margin-top: 3%;
+    }
+
+
+    .email-pos {
+        padding-top: 20%;
+        padding-bottom: 2rem;
+    }
+
+    .btn-primary {
+        margin-bottom: 1rem;
+        margin-left: 27%;
+    }
+
+    .btn-edit {
+        margin-bottom: 1rem;
+    }
+
+    .delete-acc {
+        padding-left: 60rem;
+        padding-right: 15rem;
+    }
+
+    .change-btns {
+        margin-top: 1rem;
+        margin-left: 47%;
+    }
+
+    .list-group {
+        max-height: 300px;
+        min-width: 200px;
+        margin-bottom: 10px;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .panel-primary {
+        margin-left: 25%;
+        text-align:center;
+    }
+
+    .table-commits {
+        min-width: 300px;
+        
+    }
+    
+    .link-info {
+        margin-right:25%;
+        text-align:center;  
+    }
+
+    table {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 14px;
+        border-radius: 10px;
+        border-spacing: 0;
+        text-align: center;
+        min-width: 300px;
+    }
+
+    th {
+        background: rgba(240, 141, 11, 0.7);
+        color: white;
+        text-shadow: 0 1px 1px #2D2020;
+        padding: 10px 20px;
+    }
+
+    th, td {
+        border-style: solid;
+        border-width: 0 1px 1px 0;
+        border-color: white;
+    }
+
+        th:first-child, td:first-child {
+            text-align: left;
+        }
+
+        th:first-child {
+            border-top-left-radius: 10px;
+        }
+
+        th:last-child {
+            border-top-right-radius: 10px;
+            border-right: none;
+        }
+
+    td {
+        padding: 10px 20px;
+        background: #D3D3D3;
+    }
+
+    tr:last-child td:first-child {
+        border-radius: 0 0 0 10px;
+    }
+
+    tr:last-child td:last-child {
+        border-radius: 0 0 10px 0;
+    }
+
+    tr td:last-child {
+        border-right: none;
+    }
+</style>
+<div class="link-info">
+    <label class="labels" style="margin-left: 27%;" asp-for="GithubLink">Githublink</label><br />
+    <label class="labels" style="margin-left: 27%;" asp-for="Description">Description</label><br />
+</div>
+<div class="main">
+
+    <div class="project-info">
+        <label class="labels" style="margin-left: 27%;" asp-for="Name">Name</label><br />
+        <label class="labels" style="margin-left: 27%;" asp-for="DateTime">DateTime</label><br />
+
+    </div>
+    <div class="panel-primary" id="result_panel">
+        <caption>List of commits</caption>
+        <table class="table-commits">
+            <tr class="">
+                <th>Owner</th>
+                <th>Description</th>
+                <th>Comments</th>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>link</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+<div style="text-align: center; margin-right: 25%; margin-top: 10%">
+    <input style="margin-top: 20%; border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px; margin-top: 2%" class="btn btn-primary" type="submit" value="Back" />
+</div>
