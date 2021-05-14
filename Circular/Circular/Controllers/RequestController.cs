@@ -22,8 +22,8 @@ namespace Circular.Controllers
             string JsonRequestResult;
             List<CommitResponse> commits = new List<CommitResponse>();
             var toFormat = RepoUrl.Split("/");
-            string apiUrl = string.Format("https://api.github.com/repos/{0}/{1}/commits", toFormat[3], toFormat[4]);
-
+            string apiUrl = string.Format("https://api.github.com/repos/{0}/{1}/commits",
+                toFormat[toFormat.Count() - 2], toFormat[toFormat.Count() - 1]);
 
             //Request body
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(apiUrl);
@@ -48,8 +48,7 @@ namespace Circular.Controllers
                 commits.Add(commitResponse);
             }
 
-            ViewBag.Commits = commits;
-            return View();
+            return View(commits);
         }
     }
 }

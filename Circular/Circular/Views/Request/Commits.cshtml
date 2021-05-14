@@ -1,10 +1,13 @@
-﻿@{
+﻿@using Circular.Models.JsonModels
+
+@model List<CommitResponse>
+@{
     ViewData["Title"] = "Commits";
 }
 
-@foreach(var element in ViewBag.Commits)
-            {
-<h1>@element.commit.message</h1>
-<p>@element.commit.author.name</p>
-<p>@element.commit.author.date</p>
-            }
+@foreach(var element in Model)
+{
+    <h1>@element.commit.message</h1>
+    <p>@element.commit.author.name</p>
+    <p>@element.commit.author.date</p>
+}
