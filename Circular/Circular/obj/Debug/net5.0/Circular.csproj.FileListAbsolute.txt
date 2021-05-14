@@ -508,3 +508,7 @@ D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\Npgsql.EntityFramew
 D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
 D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Razor\Views\Profile\Profile.cshtml.g.cs
 D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Razor\Views\Request\Commits.cshtml.g.cs
+D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Razor\Views\Profile\ChangePassword.cshtml.g.cs
+D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Razor\Views\Profile\ProfileEdit.cshtml.g.cs
+D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Razor\Views\Project\CreateProject.cshtml.g.cs
+D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Razor\Views\Project\Project.cshtml.g.cs
