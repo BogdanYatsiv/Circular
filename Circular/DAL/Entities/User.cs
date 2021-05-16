@@ -29,6 +29,5 @@ namespace DAL.Entities
     //    public bool isAdmin { get; set; }
 
         public List<Project> Project { get; set; }
-        public List<Comment> Comment { get; set; }
     }
 }

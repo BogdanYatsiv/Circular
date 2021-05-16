@@ -46,7 +46,7 @@ namespace Circular.Controllers
                 {
                     foreach (var error in result.Errors)
                     {
-                        ModelState.AddModelError(string.Empty, error.Description);
+                        ModelState.AddModelError(string.Empty, "Username is invalid, can only contain small letters or digits.");
                     }
                 }
             }
