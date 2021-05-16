@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9mIYfSTc4o3JPfic9vSQVhicdJNiRv4x5HrDyWV5n6c3vQLMZb8x+0RRZ/dWrlPfEpsO+BR8UR+nJbG80Qrp+Q==",
+  "dgSpecHash": "BKMnTHnQqLKIXWc5S5DJn7qccDOMGN862hrWSxKvgt6KYJe3ZroJ+niBOpRMW4h9sEeOnGRZXAB9B9ujzHYAzQ==",
   "success": true,
   "projectFilePath": "D:\\STUDY\\Kursova\\Circular\\Circular\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
@@ -87,8 +87,8 @@
     "C:\\Users\\bogda\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\bogda\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\bogda\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
-    "C:\\Users\\bogda\\.nuget\\packages\\npgsql\\5.0.4\\npgsql.5.0.4.nupkg.sha512",
-    "C:\\Users\\bogda\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.5.1\\npgsql.entityframeworkcore.postgresql.5.0.5.1.nupkg.sha512",
+    "C:\\Users\\bogda\\.nuget\\packages\\npgsql\\5.0.5\\npgsql.5.0.5.nupkg.sha512",
+    "C:\\Users\\bogda\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.6\\npgsql.entityframeworkcore.postgresql.5.0.6.nupkg.sha512",
     "C:\\Users\\bogda\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\bogda\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\bogda\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

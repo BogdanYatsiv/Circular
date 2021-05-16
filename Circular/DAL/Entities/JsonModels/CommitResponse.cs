@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Circular.Models.JsonModels
 {
+    //for right data formating
     class UnixTimeToDatetimeConverter : DateTimeConverterBase
     {
         private static readonly DateTime _epoch =
