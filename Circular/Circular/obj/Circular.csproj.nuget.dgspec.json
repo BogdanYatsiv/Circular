@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj": {}
+    "D:\\STUDY\\Kursova\\Circular\\Circular\\Circular\\Circular.csproj": {}
   },
   "projects": {
-    "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj": {
+    "D:\\STUDY\\Kursova\\Circular\\Circular\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj",
+        "projectUniqueName": "D:\\STUDY\\Kursova\\Circular\\Circular\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "F:\\Курсова\\Circular\\Circular\\BLL\\obj\\",
+        "projectPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
+        "outputPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
-                "projectPath": "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj"
+              "D:\\STUDY\\Kursova\\Circular\\Circular\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\DAL\\DAL.csproj"
               }
             }
           }
@@ -117,21 +117,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj": {
+    "D:\\STUDY\\Kursova\\Circular\\Circular\\Circular\\Circular.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj",
+        "projectUniqueName": "D:\\STUDY\\Kursova\\Circular\\Circular\\Circular\\Circular.csproj",
         "projectName": "Circular",
-        "projectPath": "F:\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "F:\\Курсова\\Circular\\Circular\\Circular\\obj\\",
+        "projectPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\Circular\\Circular.csproj",
+        "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
+        "outputPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\Circular\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -145,11 +145,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj": {
-                "projectPath": "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj"
+              "D:\\STUDY\\Kursova\\Circular\\Circular\\BLL\\BLL.csproj": {
+                "projectPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\BLL\\BLL.csproj"
               },
-              "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
-                "projectPath": "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj"
+              "D:\\STUDY\\Kursova\\Circular\\Circular\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\DAL\\DAL.csproj"
               }
             }
           }
@@ -253,21 +253,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
+    "D:\\STUDY\\Kursova\\Circular\\Circular\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\STUDY\\Kursova\\Circular\\Circular\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "F:\\Курсова\\Circular\\Circular\\DAL\\obj\\",
+        "projectPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
+        "outputPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -367,7 +367,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
