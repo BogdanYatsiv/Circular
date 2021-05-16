@@ -6,13 +6,12 @@ using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.IO;
 using Circular.Models.JsonModels;
-using DAL.JsonModels;
 
 namespace Circular.Controllers
 {
     public class ProjectController : Controller
     {
-        public async Task<IActionResult> ProjectAsync(string GithubLink)
+        public async Task<IActionResult> Project(string GithubLink)
         {
             string JsonRequestResult;
             ProjectResponse projectResponse = new ProjectResponse();
@@ -47,7 +46,7 @@ namespace Circular.Controllers
 
         public IActionResult CreateProject(string GithubLink)
         {
-            return View();
+            return RedirectToAction("Project", "Project", new { GithubLink });
         }
     }
 }

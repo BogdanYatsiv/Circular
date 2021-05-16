@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.JsonModels
+namespace Circular.Models.JsonModels
 {
-    class ProjectResponse
+    public class ProjectResponse
     {
         public string name { get; set; }
         public Owner owner { get; set; }
@@ -18,7 +18,7 @@ namespace DAL.JsonModels
         public string language { get; set; }
     }
 
-    class Owner
+    public class Owner
     {
         [JsonProperty("login")]
         public string name { get; set; }

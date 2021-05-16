@@ -1,4 +1,6 @@
-﻿@model Circular.Models.ViewModels.ProjectViewModel
+﻿@using Circular.Models.JsonModels;
+
+@model ProjectResponse
 
 @{
     ViewData["Title"] = "Project";
@@ -143,13 +145,13 @@
 </style>
 
 <div class="link-info">
-    <label class="labels" style="margin-left: 27%;" asp-for="GithubLink">Githublink</label><br />
-    <label class="labels" style="margin-left: 27%;" asp-for="Description">Description</label><br />
+    <label class="labels" style="margin-left: 27%;" >@Model.url</label><br />
+    <!--<label class="labels" style="margin-left: 27%;" asp-for="Description">Description</label><br />-->
 </div>
 
 <div class="main">
     <div class="project-info">
-        <label class="labels" style="margin-left: 27%;" asp-for="Name">Name</label><br />
+        <label class="labels" style="margin-left: 27%;">@Model.name</label><br />
         <!--<label class="labels" style="margin-left: 27%;" asp-for="DateTime">DateTime</label><br />-->
     </div>
     <div class="panel-primary" id="result_panel">
