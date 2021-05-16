@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL.JsonModels
 {
-    class RepositoryResponse
+    class ProjectResponse
     {
         public string name { get; set; }
         public Owner owner { get; set; }
