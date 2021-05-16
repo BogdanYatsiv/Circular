@@ -14,8 +14,6 @@ namespace Circular.Controllers
     {
         private readonly UserManager<User> _userManager;
         
-
-        //private readonly 
         public IActionResult Profile()
         {
             return View();

@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Circular.Controllers;
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -63,9 +65,9 @@
     <div class="main">
 
         <div class="personal-info">
-            <button style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" type="button" class="btn btn-primary" asp-controller="Project" asp-action="CreateProject">Start new project</button><br>
-            <button style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px;" type="button" class="btn btn-primary">Join to project</button><br>
-            <button style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px;" type="button" class="btn btn-primary" method="get" asp-controller="Profile" asp-action="Profile">My Profile</button>
+            <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" type="button" class="btn btn-primary" asp-controller="Project" asp-action="CreateProject">Start new project</a><br>
+            <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px;" type="button" class="btn btn-primary">Join to project</a><br>
+            <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px;" type="button" class="btn btn-primary" asp-controller="Profile" asp-action="Profile">My Profile</a>
         </div>
         <div class="about-us">
             <h3 style="margin-left: 25%;">About us</h3>
