@@ -23,6 +23,5 @@ namespace Circular.Models.ViewModels
         //public string Description { get; set; }
 
         public string GithubLink { get; set; }
-
     }
 }
