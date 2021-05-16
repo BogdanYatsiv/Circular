@@ -333,3 +333,9 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+Circular/Circular/obj/Circular.csproj.nuget.dgspec.json
+Circular/Circular/obj/Circular.csproj.nuget.g.props
+Circular/Circular/obj/project.assets.json
+Circular/Circular/obj/project.nuget.cache
+Circular/.vs/Circular/DesignTimeBuild/.dtbcache.v2
+Circular/.vs/Circular/v16/.suo
