@@ -13,6 +13,7 @@ namespace Circular.Controllers
     {
         public async Task<IActionResult> Project(string GithubLink)
         {
+            //TO DO: заносити проект в базу даних
             string JsonRequestResult;
             ProjectResponse projectResponse = new ProjectResponse();
             var toFormat = GithubLink.Split("/");
