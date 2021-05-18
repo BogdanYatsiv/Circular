@@ -13,7 +13,17 @@ namespace Circular.Controllers
     public class ProfileController : Controller
     {
         private readonly UserManager<User> _userManager;
+<<<<<<< Updated upstream
         
+=======
+
+        public ProfileController(UserManager<User> userManager)
+        {
+            _userManager = userManager;
+        }
+
+        //private readonly 
+>>>>>>> Stashed changes
         public IActionResult Profile()
         {
             return View();
@@ -27,7 +37,7 @@ namespace Circular.Controllers
         public async Task<IActionResult> ChangePassword()
         {
 
-            User user = await _userManager.FindByNameAsync(User.Identity.Name);
+            User user = await _userManager.GetUserAsync(HttpContext.User);
             if (user == null)
             {
                 return NotFound();
@@ -43,14 +53,14 @@ namespace Circular.Controllers
             if (ModelState.IsValid)
             {
 
-                User user = await _userManager.FindByNameAsync(model.Username);
+                User user = await _userManager.FindByIdAsync(model.Id);
                 if (user != null)
                 {
                     IdentityResult result =
                         await _userManager.ChangePasswordAsync(user, model.OldPassword, model.NewPassword);
                     if (result.Succeeded)
                     {
-                        return RedirectToAction("Index");
+                        return RedirectToAction("Profile");
                     }
                     else
                     {

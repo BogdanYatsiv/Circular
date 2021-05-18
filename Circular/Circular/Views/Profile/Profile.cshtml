@@ -75,20 +75,70 @@
     .panel-primary {
         margin-left: 15%;
     }
+
+    table {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 14px;
+        border-radius: 10px;
+        border-spacing: 0;
+        text-align: center;
+        min-width: 300px;
+    }
+
+    th {
+        background: rgba(240, 141, 11, 0.7);
+        color: white;
+        text-shadow: 0 1px 1px #2D2020;
+        padding: 10px 20px;
+    }
+
+    th, td {
+        border-style: solid;
+        border-width: 0 1px 1px 0;
+        border-color: white;
+    }
+
+        th:first-child, td:first-child {
+            text-align: left;
+        }
+
+        th:first-child {
+            border-top-left-radius: 10px;
+        }
+
+        th:last-child {
+            border-top-right-radius: 10px;
+            border-right: none;
+        }
+
+    td {
+        padding: 10px 20px;
+        background: #D3D3D3;
+    }
+
+    tr:last-child td:first-child {
+        border-radius: 0 0 0 10px;
+    }
+
+    tr:last-child td:last-child {
+        border-radius: 0 0 10px 0;
+    }
+
+    tr td:last-child {
+        border-right: none;
+    }
 </style>
 <div class="main">
 
     <div class="personal-info">
         <label class="labels" style="margin-left: 27%;" asp-for="Username">@User.Identity.Name</label><br />
         <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" >Edit profile</a><br>
-        <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" >Change password</a>
+        <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Profile" asp-action="ChangePassword">Change password</a>
 
     </div>
     <div class="panel-primary" id="result_panel">
         <caption>List of projects</caption>
-        <table border="1" width="100%" cellpadding="5">
-
-
+        <table>
             <tr>
                 <th>Name</th>
                 <th>Github link</th>
