@@ -10,69 +10,16 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Circular.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210430152811_init1")]
-    partial class init1
+    [Migration("20210516113923_Reconstruct")]
+    partial class Reconstruct
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 63)
-                .HasAnnotation("ProductVersion", "5.0.5")
+                .HasAnnotation("ProductVersion", "5.0.6")
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-            modelBuilder.Entity("DAL.Entities.Comment", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<int>("CommitId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("UserId1")
-                        .HasColumnType("text");
-
-                    b.Property<string>("description")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CommitId");
-
-                    b.HasIndex("UserId1");
-
-                    b.ToTable("Comment");
-                });
-
-            modelBuilder.Entity("DAL.Entities.Commit", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<int>("ProjectId")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("description")
-                        .HasColumnType("text");
-
-                    b.Property<string>("hash_code")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProjectId");
-
-                    b.ToTable("Commit");
-                });
 
             modelBuilder.Entity("DAL.Entities.Project", b =>
                 {
@@ -92,7 +39,6 @@ namespace Circular.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("name")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
@@ -309,34 +255,6 @@ namespace Circular.Migrations
                     b.ToTable("ProjectUser");
                 });
 
-            modelBuilder.Entity("DAL.Entities.Comment", b =>
-                {
-                    b.HasOne("DAL.Entities.Commit", "Commit")
-                        .WithMany("Comment")
-                        .HasForeignKey("CommitId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DAL.Entities.User", "User")
-                        .WithMany("Comment")
-                        .HasForeignKey("UserId1");
-
-                    b.Navigation("Commit");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("DAL.Entities.Commit", b =>
-                {
-                    b.HasOne("DAL.Entities.Project", "Project")
-                        .WithMany("Commit")
-                        .HasForeignKey("ProjectId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Project");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -401,21 +319,6 @@ namespace Circular.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("DAL.Entities.Commit", b =>
-                {
-                    b.Navigation("Comment");
-                });
-
-            modelBuilder.Entity("DAL.Entities.Project", b =>
-                {
-                    b.Navigation("Commit");
-                });
-
-            modelBuilder.Entity("DAL.Entities.User", b =>
-                {
-                    b.Navigation("Comment");
                 });
 #pragma warning restore 612, 618
         }
