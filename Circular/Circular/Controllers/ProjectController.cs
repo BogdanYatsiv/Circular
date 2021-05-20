@@ -19,9 +19,9 @@ namespace Circular.Controllers
             string JsonRequestResult;
             ProjectResponse projectResponse = new ProjectResponse();
             //TO DO: правильно відформатувати посилання
-            //var toFormat = GithubLink.Split("/");
+            var toFormat = GithubLink.Split("/");
             string apiUrl = string.Format("https://api.github.com/repos/{0}/{1}",
-                "BogdanYatsiv", "Circular");
+                toFormat[toFormat.Length - 2], toFormat[toFormat.Length - 1]);
 
             //Request body
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(apiUrl);
@@ -37,15 +37,6 @@ namespace Circular.Controllers
             }
             response.Close();
 
-            //TO DO: спарсити як 1 об'єкт а не список
-
-            //JsonRequestResult is an array of json nums
-            //JArray jR = JArray.Parse(JsonRequestResult);
-
-            //foreach (JObject value in jR)
-            //{
-            //    projectResponse = JsonConvert.DeserializeObject<ProjectResponse>(value.ToString());
-            //}
             JObject jO = JObject.Parse(JsonRequestResult);
             projectResponse = JsonConvert.DeserializeObject<ProjectResponse>(jO.ToString());
 
