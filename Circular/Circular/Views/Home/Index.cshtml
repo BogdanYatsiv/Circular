@@ -57,6 +57,17 @@
         min-width: 20%;
         max-width: 30%;
     }
+    .log-or-reg {
+        position: absolute; 
+        width: 400px; 
+        height: 300px; 
+        left: 50%; 
+        top: 50%; 
+        margin-left: -211px; 
+        margin-top: -150px; 
+        
+        overflow: auto;
+    }
 </style>
 
 @if (User.Identity.IsAuthenticated)
@@ -80,7 +91,7 @@
 }
 else
 {
-<div class="personal-info">
+<div align="center" class="log-or-reg">
     <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Account" asp-action="Login">Вхід</a><br>
     <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Account" asp-action="Register">Реєстрація</a>
 </div>
