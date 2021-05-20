@@ -16,7 +16,7 @@ namespace Circular.Controllers
 {
     public class RequestController : Controller
     {
-        [HttpGet]
+        [HttpPost]
         public async Task<IActionResult> Commits(string RepoUrl = "https://github.com/BogdanYatsiv/Circular")
         {
             string JsonRequestResult;

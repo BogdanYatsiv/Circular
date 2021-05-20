@@ -10943,19 +10943,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bogda\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\STUDY\\Kursova\\Circular\\Circular\\Circular\\Circular.csproj",
+      "projectUniqueName": "F:\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj",
       "projectName": "Circular",
-      "projectPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\Circular\\Circular.csproj",
-      "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
-      "outputPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\Circular\\obj\\",
+      "projectPath": "F:\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "F:\\Курсова\\Circular\\Circular\\Circular\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10969,11 +10969,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\STUDY\\Kursova\\Circular\\Circular\\BLL\\BLL.csproj": {
-              "projectPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\BLL\\BLL.csproj"
+            "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj": {
+              "projectPath": "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj"
             },
-            "D:\\STUDY\\Kursova\\Circular\\Circular\\DAL\\DAL.csproj": {
-              "projectPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\DAL\\DAL.csproj"
+            "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
+              "projectPath": "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj"
             }
           }
         }
@@ -11081,7 +11081,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

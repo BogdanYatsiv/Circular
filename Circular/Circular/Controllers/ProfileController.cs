@@ -13,25 +13,15 @@ namespace Circular.Controllers
     public class ProfileController : Controller
     {
         private readonly UserManager<User> _userManager;
-<<<<<<< Updated upstream
-        
-=======
 
         public ProfileController(UserManager<User> userManager)
         {
             _userManager = userManager;
         }
 
-        //private readonly 
->>>>>>> Stashed changes
         public IActionResult Profile()
         {
             return View();
-        }
-
-        public IActionResult ProfileEdit(ProfileEditModel model)
-        {
-            return View(model);
         }
 
         public async Task<IActionResult> ChangePassword()
@@ -73,6 +63,45 @@ namespace Circular.Controllers
                 else
                 {
                     ModelState.AddModelError(string.Empty, "Користувач не знайдений");
+                }
+            }
+            return View(model);
+        }
+
+        public async Task<IActionResult> ProfileEdit()
+        {
+            User user = await _userManager.GetUserAsync(HttpContext.User);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            ProfileEditModel model = new ProfileEditModel { Id = user.Id, Email = user.Email, Username = user.UserName};
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ProfileEdit(ProfileEditModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                User user = await _userManager.FindByIdAsync(model.Id);
+                if (user != null)
+                {
+                    user.Email = model.Email;
+                    user.UserName = model.Username;
+
+                    var result = await _userManager.UpdateAsync(user);
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("Profile");
+                    }
+                    else
+                    {
+                        foreach (var error in result.Errors)
+                        {
+                            ModelState.AddModelError(string.Empty, error.Description);
+                        }
+                    }
                 }
             }
             return View(model);
