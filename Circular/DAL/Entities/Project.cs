@@ -16,12 +16,12 @@ namespace DAL.Entities
 
         public string name { get; set; }
 
-        public string description { get; set; }
+        public string language { get; set; }
 
         [Required]
         public string githubLink { get; set; }
 
-        public DateTime dateTime { get; set; }
+        public DateTime createDate { get; set; }
 
         public List<User> User { get; set; }
     }

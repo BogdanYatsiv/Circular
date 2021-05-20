@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using System.IO;
 using Circular.Models.JsonModels;
 using Circular.Models.ViewModels;
+using DAL.Entities;
 
 namespace Circular.Controllers
 {
@@ -15,10 +16,10 @@ namespace Circular.Controllers
         [HttpGet]
         public async Task<IActionResult> Project(string GithubLink)
         {
-            //TO DO: заносити проект в базу даних
+            
+
             string JsonRequestResult;
             ProjectResponse projectResponse = new ProjectResponse();
-            //TO DO: правильно відформатувати посилання
             var toFormat = GithubLink.Split("/");
             string apiUrl = string.Format("https://api.github.com/repos/{0}/{1}",
                 toFormat[toFormat.Length - 2], toFormat[toFormat.Length - 1]);
@@ -40,13 +41,16 @@ namespace Circular.Controllers
             JObject jO = JObject.Parse(JsonRequestResult);
             projectResponse = JsonConvert.DeserializeObject<ProjectResponse>(jO.ToString());
 
+            //TO DO: заносити проект в базу даних
+            Project project = new Project { githubLink = projectResponse.url, name = projectResponse.name, 
+                language = projectResponse.language, createDate = projectResponse.created_at};
+            
             return View(projectResponse);
         }
 
         [HttpGet]
         public IActionResult CreateProject()
         {
-            //return RedirectToAction("Project", "Project", new { GithubLink });
             return View();
         }
 
