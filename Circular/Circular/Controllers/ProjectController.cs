@@ -47,7 +47,8 @@ namespace Circular.Controllers
 
         public IActionResult CreateProject(string GithubLink)
         {
-            return RedirectToAction("Project", "Project", new { GithubLink });
+            //return RedirectToAction("Project", "Project", new { GithubLink });
+            return View();
         }
     }
 }
