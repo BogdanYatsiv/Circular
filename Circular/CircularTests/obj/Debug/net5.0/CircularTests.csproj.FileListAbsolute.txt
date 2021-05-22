@@ -493,6 +493,6 @@ D:\STUDY\Kursova\Circular\Circular\CircularTests\obj\Debug\net5.0\CircularTests.
 D:\STUDY\Kursova\Circular\Circular\CircularTests\obj\Debug\net5.0\ref\CircularTests.dll
 D:\STUDY\Kursova\Circular\Circular\CircularTests\obj\Debug\net5.0\CircularTests.pdb
 D:\STUDY\Kursova\Circular\Circular\CircularTests\obj\Debug\net5.0\CircularTests.genruntimeconfig.cache
-D:\STUDY\Kursova\Circular\Circular\CircularTests\bin\Debug\net5.0\Circular.StaticWebAssets.xml
 D:\STUDY\Kursova\Circular\Circular\CircularTests\bin\Debug\net5.0\Npgsql.dll
 D:\STUDY\Kursova\Circular\Circular\CircularTests\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\STUDY\Kursova\Circular\Circular\CircularTests\bin\Debug\net5.0\Circular.StaticWebAssets.xml

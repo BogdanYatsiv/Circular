@@ -477,7 +477,6 @@ D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Circular.GeneratedM
 D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Circular.AssemblyInfoInputs.cache
 D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Circular.AssemblyInfo.cs
 D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Circular.csproj.CoreCompileInputs.cache
-D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Circular.MvcApplicationPartsAssemblyInfo.cs
 D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Circular.MvcApplicationPartsAssemblyInfo.cache
 D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Circular.RazorAssemblyInfo.cache
 D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Circular.RazorAssemblyInfo.cs

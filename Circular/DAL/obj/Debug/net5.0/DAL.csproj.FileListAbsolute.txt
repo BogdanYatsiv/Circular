@@ -280,7 +280,6 @@ D:\STUDY\Kursova\Circular\Circular\DAL\bin\Debug\net5.0\refs\System.Xml.XmlSeria
 D:\STUDY\Kursova\Circular\Circular\DAL\bin\Debug\net5.0\refs\System.Xml.XPath.dll
 D:\STUDY\Kursova\Circular\Circular\DAL\bin\Debug\net5.0\refs\System.Xml.XPath.XDocument.dll
 D:\STUDY\Kursova\Circular\Circular\DAL\bin\Debug\net5.0\refs\WindowsBase.dll
-D:\STUDY\Kursova\Circular\Circular\DAL\obj\Debug\net5.0\DAL.csprojAssemblyReference.cache
 D:\STUDY\Kursova\Circular\Circular\DAL\obj\Debug\net5.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
 D:\STUDY\Kursova\Circular\Circular\DAL\obj\Debug\net5.0\DAL.AssemblyInfoInputs.cache
 D:\STUDY\Kursova\Circular\Circular\DAL\obj\Debug\net5.0\DAL.AssemblyInfo.cs
@@ -580,3 +579,4 @@ F:\Курсова\Circular\Circular\DAL\obj\Debug\net5.0\DAL.dll
 F:\Курсова\Circular\Circular\DAL\obj\Debug\net5.0\ref\DAL.dll
 F:\Курсова\Circular\Circular\DAL\obj\Debug\net5.0\DAL.pdb
 F:\Курсова\Circular\Circular\DAL\obj\Debug\net5.0\DAL.genruntimeconfig.cache
+D:\STUDY\Kursova\Circular\Circular\DAL\obj\Debug\net5.0\DAL.csprojAssemblyReference.cache

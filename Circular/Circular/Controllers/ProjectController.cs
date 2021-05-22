@@ -8,11 +8,17 @@ using System.IO;
 using Circular.Models.JsonModels;
 using Circular.Models.ViewModels;
 using DAL.Entities;
+using Circular.Data;
 
 namespace Circular.Controllers
 {
     public class ProjectController : Controller
     {
+        private ApplicationDbContext dbContext;
+        public ProjectController(ApplicationDbContext context)
+        {
+            dbContext = context;
+        }
         [HttpGet]
         public async Task<IActionResult> Project(string GithubLink)
         {
@@ -44,7 +50,8 @@ namespace Circular.Controllers
             //TO DO: заносити проект в базу даних
             Project project = new Project { githubLink = projectResponse.url, name = projectResponse.name, 
                 language = projectResponse.language, createDate = projectResponse.created_at};
-            
+            dbContext.Projects.Add(project);
+            dbContext.SaveChanges();
             return View(projectResponse);
         }
 
