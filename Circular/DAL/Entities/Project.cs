@@ -23,6 +23,9 @@ namespace DAL.Entities
 
         public DateTime createDate { get; set; }
 
-        public List<User> User { get; set; }
+        public string UserId { get; set; }
+
+        public User User { get; set; }
+
     }
 }

@@ -1,4 +1,3 @@
-using Circular.Data;
 using DAL.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -12,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DAL.Data;
 
 namespace Circular
 {
@@ -27,34 +27,46 @@ namespace Circular
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddDbContext<ApplicationDbContext>(options =>
-            //    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddEntityFrameworkNpgsql().AddDbContext<ApplicationDbContext>(opt =>
-            opt.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
-
-            //services.AddIdentity<User, IdentityRole>()
-            //    .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddIdentity<User, IdentityRole>(opts => {
-                opts.User.RequireUniqueEmail = true;    // уникальный email
-                opts.User.AllowedUserNameCharacters = ".@abcdefghijklmnopqrstuvwxyz"; // допустимые символы
-            })
-        .AddEntityFrameworkStores<ApplicationDbContext>();
-
+            services.AddDbContext<ApplicationDbContext>(options =>
+            {
+                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"));
+            });
+            services.AddIdentity<User, IdentityRole>(
+                opts =>
+                {
+                    opts.Password.RequiredLength = 8;
+                    opts.Password.RequireNonAlphanumeric = true;
+                    opts.Password.RequireLowercase = true;
+                    opts.Password.RequireUppercase = true;
+                    opts.Password.RequireDigit = true;
+                }
+                ).AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
+
+            services.AddAuthentication();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseDeveloperExceptionPage();
-
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+            }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
 
-            app.UseAuthentication();    // подключение аутентификации
+            app.UseAuthentication();
             app.UseAuthorization();
+
 
             app.UseEndpoints(endpoints =>
             {

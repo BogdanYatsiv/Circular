@@ -1025,3 +1025,9 @@ F:\Курсова\Circular\Circular\Circular\obj\Debug\net5.0\Circular.RazorTarg
 F:\Курсова\Circular\Circular\Circular\obj\Debug\net5.0\Circular.Views.pdb
 F:\Курсова\Circular\Circular\Circular\obj\Debug\net5.0\Circular.csproj.CopyComplete
 F:\Курсова\Circular\Circular\Circular\obj\Debug\net5.0\Circular.genruntimeconfig.cache
+F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\Octopus.Client.dll
+F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\Octopus.TinyTypes.dll
+F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\Octopus.TinyTypes.Json.dll
+F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\Octopus.TinyTypes.TypeConverters.dll

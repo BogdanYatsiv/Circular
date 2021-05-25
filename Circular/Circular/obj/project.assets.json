@@ -844,6 +844,19 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Relational.Design/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "1.1.0",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Sqlite/5.0.6": {
         "type": "package",
         "dependencies": {
@@ -1639,6 +1652,24 @@
           "lib/netstandard2.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
         }
       },
+      "Npgsql.EntityFrameworkCore.PostgreSQL.Design/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "1.1.0",
+          "Microsoft.EntityFrameworkCore.Relational": "1.1.0",
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.0",
+          "Microsoft.Extensions.DependencyInjection": "1.1.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.1.0",
+          "Npgsql": "3.1.9",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll": {}
+        }
+      },
       "NuGet.Frameworks/5.0.0": {
         "type": "package",
         "compile": {
@@ -1646,6 +1677,74 @@
         },
         "runtime": {
           "lib/netstandard2.0/NuGet.Frameworks.dll": {}
+        }
+      },
+      "NUnitTestAdapter.WithFramework/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/NUnit.VisualStudio.TestAdapter.dll": {},
+          "lib/nunit.core.dll": {},
+          "lib/nunit.core.interfaces.dll": {},
+          "lib/nunit.framework.dll": {},
+          "lib/nunit.util.dll": {}
+        },
+        "runtime": {
+          "lib/NUnit.VisualStudio.TestAdapter.dll": {},
+          "lib/nunit.core.dll": {},
+          "lib/nunit.core.interfaces.dll": {},
+          "lib/nunit.framework.dll": {},
+          "lib/nunit.util.dll": {}
+        }
+      },
+      "Octopus.Client/11.2.3291": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Octopus.TinyTypes": "0.1.499",
+          "Octopus.TinyTypes.Json": "0.1.499",
+          "Octopus.TinyTypes.TypeConverters": "0.1.499",
+          "System.ComponentModel.Annotations": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Octopus.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Octopus.Client.dll": {}
+        }
+      },
+      "Octopus.TinyTypes/0.1.499": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Octopus.TinyTypes.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Octopus.TinyTypes.dll": {}
+        }
+      },
+      "Octopus.TinyTypes.Json/0.1.499": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.1",
+          "Octopus.TinyTypes": "0.1.499"
+        },
+        "compile": {
+          "lib/netstandard2.1/Octopus.TinyTypes.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Octopus.TinyTypes.Json.dll": {}
+        }
+      },
+      "Octopus.TinyTypes.TypeConverters/0.1.499": {
+        "type": "package",
+        "dependencies": {
+          "Octopus.TinyTypes": "0.1.499"
+        },
+        "compile": {
+          "lib/netstandard2.1/Octopus.TinyTypes.TypeConverters.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Octopus.TinyTypes.TypeConverters.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -3524,10 +3623,12 @@
           "Microsoft.AspNetCore.Identity.UI": "5.0.6",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "5.0.6",
           "Microsoft.AspNetCore.SignalR": "1.1.0",
+          "Microsoft.EntityFrameworkCore": "5.0.6",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.6",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.6",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.6"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.6",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0"
         },
         "compile": {
           "bin/placeholder/BLL.dll": {}
@@ -3546,10 +3647,12 @@
           "Microsoft.AspNetCore.Identity.UI": "5.0.6",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "5.0.6",
           "Microsoft.AspNetCore.SignalR": "1.1.0",
+          "Microsoft.EntityFrameworkCore": "5.0.6",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.6",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.6",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.6"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.6",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0"
         },
         "compile": {
           "bin/placeholder/DAL.dll": {}
@@ -4738,6 +4841,21 @@
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.xml",
         "microsoft.entityframeworkcore.relational.5.0.6.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Relational.Design/1.1.0": {
+      "sha512": "fF0sVEUkoGeJutGIzwnYsJJ9o2hxEGJRpSaCxPq63rhSwn0hBmCwf9ET4QqYqO9Pc6+ODXenAQa095CWzuM4Kg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.relational.design/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.dll",
+        "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.xml",
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll",
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.xml",
+        "microsoft.entityframeworkcore.relational.design.1.1.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.design.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Sqlite/5.0.6": {
@@ -5978,6 +6096,19 @@
         "postgresql.png"
       ]
     },
+    "Npgsql.EntityFrameworkCore.PostgreSQL.Design/1.1.0": {
+      "sha512": "+taA6t8sRI0JTbyCZH0GobEtJYvU4aAGBf5/2/CutWHiYpO2nLfJ8SQSyWYMKakrwn1/NDM9VV85mGEAzBZ7LQ==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql.design/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll",
+        "lib/netstandard1.3/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll",
+        "npgsql.entityframeworkcore.postgresql.design.1.1.0.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.design.nuspec"
+      ]
+    },
     "NuGet.Frameworks/5.0.0": {
       "sha512": "c5JVjuVAm4f7E9Vj+v09Z9s2ZsqFDjBpcsyS3M9xRo0bEdm/LVZSzLxxNvfvAwRiiE8nwe1h2G4OwiwlzFKXlA==",
       "type": "package",
@@ -5993,6 +6124,83 @@
         "lib/netstandard2.0/NuGet.Frameworks.xml",
         "nuget.frameworks.5.0.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
+      ]
+    },
+    "NUnitTestAdapter.WithFramework/2.0.0": {
+      "sha512": "K4c5RuLsj6jybgVt9QV/sm3F0vBvLLMoxFK0dj1vhP3R4JhRE8OMkMBu6M8NAGkBwykZUCxvZIyZCsXRd3DVDg==",
+      "type": "package",
+      "path": "nunittestadapter.withframework/2.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/NUnit.VisualStudio.TestAdapter.dll",
+        "lib/nunit.core.dll",
+        "lib/nunit.core.interfaces.dll",
+        "lib/nunit.framework.dll",
+        "lib/nunit.framework.xml",
+        "lib/nunit.util.dll",
+        "nunittestadapter.withframework.2.0.0.nupkg.sha512",
+        "nunittestadapter.withframework.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "Octopus.Client/11.2.3291": {
+      "sha512": "JVchlH9VatpQz03M67sRfhGdt8UXIsJgKrbx4zxvApoBfFWaOREi1eV7FiaqaeJ1J6BwmSJO+LE7FCd2+woNew==",
+      "type": "package",
+      "path": "octopus.client/11.2.3291",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "lib/net452/Octopus.Client.dll",
+        "lib/net452/Octopus.Client.xml",
+        "lib/netstandard2.0/Octopus.Client.dll",
+        "lib/netstandard2.0/Octopus.Client.xml",
+        "octopus.client.11.2.3291.nupkg.sha512",
+        "octopus.client.nuspec"
+      ]
+    },
+    "Octopus.TinyTypes/0.1.499": {
+      "sha512": "++A096cDtgw2WydtaC6z1vC4z2mROkvhS/tSmP0vhw9eq3G2i2HbgtXBX2dJK8D0u3qx9lj1ot64nnj8CYcwYw==",
+      "type": "package",
+      "path": "octopus.tinytypes/0.1.499",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Octopus.TinyTypes.dll",
+        "lib/netstandard2.0/Octopus.TinyTypes.dll",
+        "lib/netstandard2.1/Octopus.TinyTypes.dll",
+        "octopus.tinytypes.0.1.499.nupkg.sha512",
+        "octopus.tinytypes.nuspec"
+      ]
+    },
+    "Octopus.TinyTypes.Json/0.1.499": {
+      "sha512": "ykCAa1ItBHgQjwKTK76lAA3EVdaf2jHhUlyP5FwwfxCTv17Z8PMT4+PDD1YRf5eIA+gbNV6kum7/3elXz7hsjg==",
+      "type": "package",
+      "path": "octopus.tinytypes.json/0.1.499",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Octopus.TinyTypes.Json.dll",
+        "lib/netstandard2.0/Octopus.TinyTypes.Json.dll",
+        "lib/netstandard2.1/Octopus.TinyTypes.Json.dll",
+        "octopus.tinytypes.json.0.1.499.nupkg.sha512",
+        "octopus.tinytypes.json.nuspec"
+      ]
+    },
+    "Octopus.TinyTypes.TypeConverters/0.1.499": {
+      "sha512": "s18Uwv/0GhQn+r4fOmNdpXcoAITQThUhP/ndBgmKMXgax0Loho5A33/NaSVzHI3QtvslrRS7B19tBS4+HS3+Ow==",
+      "type": "package",
+      "path": "octopus.tinytypes.typeconverters/0.1.499",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Octopus.TinyTypes.TypeConverters.dll",
+        "lib/netstandard2.0/Octopus.TinyTypes.TypeConverters.dll",
+        "lib/netstandard2.1/Octopus.TinyTypes.TypeConverters.dll",
+        "octopus.tinytypes.typeconverters.0.1.499.nupkg.sha512",
+        "octopus.tinytypes.typeconverters.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -10937,25 +11145,28 @@
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.6",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "Moq >= 4.16.1",
+      "NUnitTestAdapter.WithFramework >= 2.0.0",
       "Newtonsoft.Json >= 13.0.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 5.0.6",
+      "Npgsql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.0",
+      "Octopus.Client >= 11.2.3291",
       "coverlet.collector >= 3.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bogda\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\STUDY\\Kursova\\Circular\\Circular\\Circular\\Circular.csproj",
+      "projectUniqueName": "F:\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj",
       "projectName": "Circular",
-      "projectPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\Circular\\Circular.csproj",
-      "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
-      "outputPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\Circular\\obj\\",
+      "projectPath": "F:\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "F:\\Курсова\\Circular\\Circular\\Circular\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10969,11 +11180,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\STUDY\\Kursova\\Circular\\Circular\\BLL\\BLL.csproj": {
-              "projectPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\BLL\\BLL.csproj"
+            "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj": {
+              "projectPath": "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj"
             },
-            "D:\\STUDY\\Kursova\\Circular\\Circular\\DAL\\DAL.csproj": {
-              "projectPath": "D:\\STUDY\\Kursova\\Circular\\Circular\\DAL\\DAL.csproj"
+            "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
+              "projectPath": "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj"
             }
           }
         }
@@ -11048,6 +11259,10 @@
             "target": "Package",
             "version": "[4.16.1, )"
           },
+          "NUnitTestAdapter.WithFramework": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.1, )"
@@ -11055,6 +11270,14 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
             "version": "[5.0.6, )"
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+            "target": "Package",
+            "version": "[1.1.0, )"
+          },
+          "Octopus.Client": {
+            "target": "Package",
+            "version": "[11.2.3291, )"
           },
           "coverlet.collector": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -11084,5 +11307,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NUnitTestAdapter.WithFramework 2.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "NUnitTestAdapter.WithFramework",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }
