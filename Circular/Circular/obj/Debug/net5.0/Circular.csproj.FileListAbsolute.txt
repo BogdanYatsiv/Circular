@@ -1031,3 +1031,9 @@ F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\Octopus.Client.dll
 F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\Octopus.TinyTypes.dll
 F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\Octopus.TinyTypes.Json.dll
 F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\Octopus.TinyTypes.TypeConverters.dll
+F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\NUnit.VisualStudio.TestAdapter.dll
+F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\nunit.core.dll
+F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\nunit.core.interfaces.dll
+F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\nunit.framework.dll
+F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\nunit.util.dll
+F:\Курсова\Circular\Circular\Circular\obj\Debug\net5.0\Razor\Views\Project\Delete.cshtml.g.cs

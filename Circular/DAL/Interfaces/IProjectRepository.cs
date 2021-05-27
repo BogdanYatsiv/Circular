@@ -13,6 +13,7 @@ namespace DAL.Interfaces
         void Create(Project item);
         void Update(Project item);
         void Delete(int id);
+        Project getProjectById(int id); 
         void Save();
     }
 }

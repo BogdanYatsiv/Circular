@@ -9,7 +9,7 @@ using DAL.Repositories;
 
 namespace DAL.Interfaces
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
         IProjectRepository Projects { get; }
         IUserRepository Users { get; }

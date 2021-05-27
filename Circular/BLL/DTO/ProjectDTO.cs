@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BLL.DTO
 {
-    class ProjectDTO
+    public class ProjectDTO
     {
         public int Id { get; set; }
         public string githubLink { get; set; }

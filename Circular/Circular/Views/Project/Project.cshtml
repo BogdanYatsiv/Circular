@@ -10,7 +10,7 @@
     .main {
         display: flex;
         position: relative;
-        margin-top: 12%;
+        margin-top: 8%;
         margin-left: 7.5%;
         font-family: Geneva, Arial, Helvetica, sans-serif;
         text-align: center;
@@ -39,8 +39,7 @@
     }
 
     .project-info {
-        margin-left: 10%;
-        margin-top: 3%;
+        margin-top: 6%;
     }
 
 
@@ -145,28 +144,31 @@
 </style>
 
 <div class="link-info">
-    <label class="labels" style="margin-left: 27%;" >@Model.url</label><br />
+    <h4 style="margin-left:15%; margin-top:3%"><a href="@Model.url">Go to github</a></h4>
     <!--<label class="labels" style="margin-left: 27%;" asp-for="Description">Description</label><br />-->
 </div>
 
 <div class="main">
     <div class="project-info">
-        <label class="labels" style="margin-left: 27%;">@Model.name</label><br />
+        <h4 style="margin-left: 15%; margin-top: 5%"><a>@Model.name</a></h4><br />
         <!--<label class="labels" style="margin-left: 27%;" asp-for="DateTime">DateTime</label><br />-->
     </div>
     <div class="panel-primary" id="result_panel">
-        <caption>List of commits</caption>
+        <h4>List of commits</h4>
         <table class="table-commits">
             <tr class="">
                 <th>Owner</th>
                 <th>Description</th>
-                <th>Comments</th>
+                <th>Date</th>
             </tr>
-            <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>link</td>
-            </tr>
+            @foreach (var element in ViewBag.Commits)
+            {
+                <tr>
+                    <td>@element.commit.author.name</td>
+                    <td>@element.commit.message</td>
+                    <td>@element.commit.author.date</td>
+                </tr>
+            }
         </table>
     </div>
 
@@ -174,5 +176,5 @@
 
 <div style="text-align: center; margin-right: 25%; margin-top: 10%">
     <!--Має повертати на профіль-->
-    <input style="margin-top: 20%; border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px; margin-top: 2%" class="btn btn-primary" type="submit" value="Back" />
+    <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Home" asp-action="Index">Back</a>
 </div>

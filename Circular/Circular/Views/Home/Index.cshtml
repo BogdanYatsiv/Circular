@@ -8,9 +8,8 @@
     .main {
         display: flex;
         position: relative;
-        margin-top: 15%;
+        margin-top: 10%;
         margin-left: 7.5%;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
     .labels {
@@ -28,7 +27,8 @@
     }
 
     .personal-info {
-      margin-left:10%;
+        margin-left: 10%;
+        margin-top: 5%;
     }
 
 
@@ -77,12 +77,11 @@
 
         <div class="personal-info">
             <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" type="button" class="btn btn-primary" asp-controller="Project" asp-action="CreateProject">Start new project</a><br>
-            <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px;" type="button" class="btn btn-primary">Join to project</a><br>
             <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px;" type="button" class="btn btn-primary" asp-controller="Profile" asp-action="Profile">My Profile</a>
         </div>
         <div class="about-us">
             <h3 style="margin-left: 25%;">About us</h3>
-            <p>The application allows the conditional teacher to keep track of each stage of student project development on GITHUB, he will receive notifications about each commit, each project and given the opportunity to go to GITHUB on the link.</p>
+            <p>Our project will simplify viewing your Github projects thanks to a simple and minimalist interface. It will also save you time as it is a web application, nothing extra needs to be installed. Access to all projects will be in one place, which will allow you to quickly switch between them, view committees and the progress of the project. Committees include a description, author, date, number of comments and a direct link to the committee page in GitHub</p>
 
         </div>
 
@@ -92,7 +91,7 @@
 else
 {
 <div align="center" class="log-or-reg">
-    <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Account" asp-action="Login">Вхід</a><br>
-    <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Account" asp-action="Register">Реєстрація</a>
+    <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Account" asp-action="Login">Log in</a><br>
+    <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Account" asp-action="Register">Registration</a>
 </div>
 }

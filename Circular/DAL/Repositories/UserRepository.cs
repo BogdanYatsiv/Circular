@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repositories
 {
-    class UserRepository: IUserRepository
+    public class UserRepository: IUserRepository
     {
         private readonly ApplicationDbContext dbContext;
 

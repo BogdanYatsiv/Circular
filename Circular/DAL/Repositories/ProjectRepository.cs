@@ -22,6 +22,10 @@ namespace DAL.Repositories
         {
             return dbContext.Projects.Where(x => x.UserId == userId).ToList();
         }
+        public Project getProjectById(int id)
+        {
+            return dbContext.Projects.Where(x => x.Id == id).FirstOrDefault();
+        }
         public void Create(Project item)
         {
             dbContext.Projects.Add(item);

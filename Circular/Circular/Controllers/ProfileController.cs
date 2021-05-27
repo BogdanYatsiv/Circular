@@ -7,21 +7,28 @@ using Circular.Models.ViewModels;
 using Circular.Models;
 using Microsoft.AspNetCore.Identity;
 using DAL.Entities;
+using BLL.Interfaces;
+using BLL.Services;
 
 namespace Circular.Controllers
 {
     public class ProfileController : Controller
     {
         private readonly UserManager<User> _userManager;
+        private IProjectService _projectService;
 
-        public ProfileController(UserManager<User> userManager)
+        public ProfileController(UserManager<User> userManager, IProjectService projectService)
         {
             _userManager = userManager;
+            _projectService = projectService;
         }
 
-        public IActionResult Profile()
+        public async Task<IActionResult> Profile()
         {
-            return View();
+            User user = await _userManager.GetUserAsync(HttpContext.User);
+            ProfileViewModel model = new ProfileViewModel { Username = user.UserName, Email = user.Email };
+            ViewBag.Projects = await _projectService.GetProjectsByUserId(user.Id);
+            return View(model);
         }
 
         public async Task<IActionResult> ChangePassword()

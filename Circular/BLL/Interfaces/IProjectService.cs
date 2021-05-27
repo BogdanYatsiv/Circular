@@ -8,10 +8,11 @@ using System.Threading.Tasks;
 
 namespace BLL.Interfaces
 {
-    interface IProjectService
+    public interface IProjectService
     {
-        Task CreateProject(ProjectDTO testDto);
+        Task CreateProject(ProjectDTO projectDto);
         Task DeleteProject(int projectId);
+        Task<Project> FindProject(int projectId);
         Task<IEnumerable<Project>> GetProjectsByUserId(string userId);
     }
 }

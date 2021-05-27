@@ -1,5 +1,4 @@
 ﻿@model Circular.Models.ViewModels.ProfileViewModel
-
 @{
     ViewData["Title"] = "Profile";
 }
@@ -10,7 +9,6 @@
         position: relative;
         margin-top: 10%;
         margin-left: 7.5%;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
     .main-edit {
@@ -35,9 +33,6 @@
         height: 90%;
     }
 
-    .personal-info {
-        margin-left: 10%;
-    }
 
 
     .email-pos {
@@ -131,7 +126,8 @@
 <div class="main">
 
     <div class="personal-info">
-        <label class="labels" style="margin-left: 27%;" asp-for="Username">@User.Identity.Name</label><br />
+        <label class="labels" style="margin-left: 27%;">@Model.Username</label><br />
+        <label class="labels" style="margin-left: 27%;">@Model.Email</label><br />
         <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Profile" asp-action="ProfileEdit">Edit profile</a><br>
         <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Profile" asp-action="ChangePassword">Change password</a>
 
@@ -142,14 +138,19 @@
             <tr>
                 <th>Name</th>
                 <th>Github link</th>
-                <th>Description</th>
+                <th>Language</th>
+                <th></th>
             </tr>
-            <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-            </tr>
-        </table>
+            @foreach (var project in ViewBag.Projects)
+            {
+        <tr>
+            <td><a asp-controller="Project" asp-action="LookProject" asp-route-projectId="@project.Id">@project.name</a></td>
+            <td><a href="@project.githubLink">@project.githubLink</a></td>
+            <td>@project.language</td>
+            <td><a asp-controller="Project" asp-action="Delete" asp-route-projectId="@project.Id">Delete project</a></td>
+        </tr>
+            }
+            </table>
     </div>
 
 </div>
