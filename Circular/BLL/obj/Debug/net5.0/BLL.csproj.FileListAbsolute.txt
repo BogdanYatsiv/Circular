@@ -283,7 +283,6 @@ D:\STUDY\Kursova\Circular\Circular\BLL\bin\Debug\net5.0\refs\System.Xml.XPath.XD
 D:\STUDY\Kursova\Circular\Circular\BLL\bin\Debug\net5.0\refs\WindowsBase.dll
 D:\STUDY\Kursova\Circular\Circular\BLL\bin\Debug\net5.0\DAL.dll
 D:\STUDY\Kursova\Circular\Circular\BLL\bin\Debug\net5.0\DAL.pdb
-D:\STUDY\Kursova\Circular\Circular\BLL\obj\Debug\net5.0\BLL.csprojAssemblyReference.cache
 D:\STUDY\Kursova\Circular\Circular\BLL\obj\Debug\net5.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
 D:\STUDY\Kursova\Circular\Circular\BLL\obj\Debug\net5.0\BLL.AssemblyInfoInputs.cache
 D:\STUDY\Kursova\Circular\Circular\BLL\obj\Debug\net5.0\BLL.AssemblyInfo.cs
@@ -588,3 +587,4 @@ F:\Курсова\Circular\Circular\BLL\obj\Debug\net5.0\BLL.dll
 F:\Курсова\Circular\Circular\BLL\obj\Debug\net5.0\ref\BLL.dll
 F:\Курсова\Circular\Circular\BLL\obj\Debug\net5.0\BLL.pdb
 F:\Курсова\Circular\Circular\BLL\obj\Debug\net5.0\BLL.genruntimeconfig.cache
+D:\STUDY\Kursova\Circular\Circular\BLL\obj\Debug\net5.0\BLL.csproj.AssemblyReference.cache

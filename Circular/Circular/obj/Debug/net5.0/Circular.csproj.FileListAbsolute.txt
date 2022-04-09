@@ -472,7 +472,6 @@ D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\BLL.dll
 D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\DAL.dll
 D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\BLL.pdb
 D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\DAL.pdb
-D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Circular.csprojAssemblyReference.cache
 D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Circular.GeneratedMSBuildEditorConfig.editorconfig
 D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Circular.AssemblyInfoInputs.cache
 D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Circular.AssemblyInfo.cs
@@ -1037,3 +1036,17 @@ F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\nunit.core.interfa
 F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\nunit.framework.dll
 F:\Курсова\Circular\Circular\Circular\bin\Debug\net5.0\nunit.util.dll
 F:\Курсова\Circular\Circular\Circular\obj\Debug\net5.0\Razor\Views\Project\Delete.cshtml.g.cs
+D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\NUnit.VisualStudio.TestAdapter.dll
+D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\nunit.core.dll
+D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\nunit.core.interfaces.dll
+D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\nunit.framework.dll
+D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\nunit.util.dll
+D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\Octopus.Client.dll
+D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\Octopus.TinyTypes.dll
+D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\Octopus.TinyTypes.Json.dll
+D:\STUDY\Kursova\Circular\Circular\Circular\bin\Debug\net5.0\Octopus.TinyTypes.TypeConverters.dll
+D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Circular.csproj.AssemblyReference.cache
+D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Circular.MvcApplicationPartsAssemblyInfo.cs
+D:\STUDY\Kursova\Circular\Circular\Circular\obj\Debug\net5.0\Razor\Views\Project\Delete.cshtml.g.cs
