@@ -40,6 +40,12 @@ namespace DAL.Repositories
             if (item != null)
                 dbContext.Projects.Remove(item);
         }
+
+        public Project getProjectByName(string name)
+        {
+            return dbContext.Projects.Where(x => x.name == name).FirstOrDefault();
+        }
+
         public void Save()
         {
             dbContext.SaveChanges();

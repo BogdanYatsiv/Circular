@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Курсова\\Circular\\Circular\\CircularTests\\CircularTests.csproj": {}
+    "F:\\Навчання\\Курсова\\Circular\\Circular\\CircularTests\\CircularTests.csproj": {}
   },
   "projects": {
-    "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj": {
+    "F:\\Навчання\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj",
+        "projectUniqueName": "F:\\Навчання\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj",
+        "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "F:\\Курсова\\Circular\\Circular\\BLL\\obj\\",
+        "outputPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
-                "projectPath": "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj"
+              "F:\\Навчання\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
+                "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj"
               }
             }
           }
@@ -129,14 +129,14 @@
         }
       }
     },
-    "F:\\Курсова\\Circular\\Circular\\CircularTests\\CircularTests.csproj": {
+    "F:\\Навчання\\Курсова\\Circular\\Circular\\CircularTests\\CircularTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Курсова\\Circular\\Circular\\CircularTests\\CircularTests.csproj",
+        "projectUniqueName": "F:\\Навчання\\Курсова\\Circular\\Circular\\CircularTests\\CircularTests.csproj",
         "projectName": "CircularTests",
-        "projectPath": "F:\\Курсова\\Circular\\Circular\\CircularTests\\CircularTests.csproj",
+        "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\CircularTests\\CircularTests.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "F:\\Курсова\\Circular\\Circular\\CircularTests\\obj\\",
+        "outputPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\CircularTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -153,14 +153,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj": {
-                "projectPath": "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj"
+              "F:\\Навчання\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj": {
+                "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj"
               },
-              "F:\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj": {
-                "projectPath": "F:\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj"
+              "F:\\Навчання\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj": {
+                "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj"
               },
-              "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
-                "projectPath": "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj"
+              "F:\\Навчання\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
+                "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj"
               }
             }
           }
@@ -279,14 +279,14 @@
         }
       }
     },
-    "F:\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj": {
+    "F:\\Навчання\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj",
+        "projectUniqueName": "F:\\Навчання\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj",
         "projectName": "Circular",
-        "projectPath": "F:\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj",
+        "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "F:\\Курсова\\Circular\\Circular\\Circular\\obj\\",
+        "outputPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\Circular\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -303,11 +303,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj": {
-                "projectPath": "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj"
+              "F:\\Навчання\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj": {
+                "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj"
               },
-              "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
-                "projectPath": "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj"
+              "F:\\Навчання\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
+                "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj"
               }
             }
           }
@@ -431,14 +431,14 @@
         }
       }
     },
-    "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
+    "F:\\Навчання\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj",
+        "projectUniqueName": "F:\\Навчання\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj",
+        "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "F:\\Курсова\\Circular\\Circular\\DAL\\obj\\",
+        "outputPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

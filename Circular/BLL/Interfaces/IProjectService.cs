@@ -12,7 +12,9 @@ namespace BLL.Interfaces
     {
         Task CreateProject(ProjectDTO projectDto);
         Task DeleteProject(int projectId);
-        Task<Project> FindProject(int projectId);
+        Task<Project> FindProjectById(int projectId);
+        Task<Project> FindProjectByName(string projectName);
+
         Task<IEnumerable<Project>> GetProjectsByUserId(string userId);
     }
 }

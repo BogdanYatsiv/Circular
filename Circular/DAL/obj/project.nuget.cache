@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UGFiku+ZkYeV5Vg4wF5YhvN0wLaNI5hETGkqVUxx+S268mM9Rrgf1iWgSiHGwLuBAu+3bgVrZxyWK+uQAbQIQQ==",
+  "dgSpecHash": "rMjs2aOl2GrrkIETJx8VhzBgp3ysb7DX77hoYMzd6LMTiNrDlRCyI0uf6dRcaNzIP1HaF+sL6KzeltBpXhmhDA==",
   "success": true,
-  "projectFilePath": "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj",
+  "projectFilePath": "F:\\Навчання\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\coverlet.collector\\3.0.3\\coverlet.collector.3.0.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",

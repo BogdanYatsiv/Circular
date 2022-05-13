@@ -11,14 +11,31 @@ using System.Threading.Tasks;
 using Circular.Models;
 using Circular.Models.JsonModels;
 using Newtonsoft.Json;
+using DAL.Entities;
+using DAL.Data;
+using Microsoft.AspNetCore.Identity;
+using BLL.Interfaces;
 
 namespace Circular.Controllers
 {
     public class RequestController : Controller
     {
-        [HttpPost]
-        public async Task<IActionResult> Commits(string RepoUrl = "https://github.com/BogdanYatsiv/Circular")
+        private ApplicationDbContext dbContext;
+        private readonly UserManager<User> userManager;
+
+
+        public RequestController(ApplicationDbContext context, UserManager<User> _userManager)
         {
+            dbContext = context;
+            userManager = _userManager;
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Commits(SubprojectViewModel model, string RepoUrl = "https://github.com/BogdanYatsiv/Circular")
+        {
+            User user = await userManager.GetUserAsync(HttpContext.User);
+
             string JsonRequestResult;
             List<CommitResponse> commits = new List<CommitResponse>();
             var toFormat = RepoUrl.Split("/");
@@ -41,12 +58,26 @@ namespace Circular.Controllers
 
             //JsonRequestResult is an array of json nums
             JArray jR = JArray.Parse(JsonRequestResult);
-            
+
             foreach (JObject value in jR)
             {
                 CommitResponse commitResponse = JsonConvert.DeserializeObject<CommitResponse>(value.ToString());
                 commits.Add(commitResponse);
+
             }
+            foreach (CommitResponse value in commits)
+            {
+                DAL.Entities.Commit commit = new DAL.Entities.Commit
+                {
+                    ownerName = user.UserName,
+                    description = value.commit.message,
+                    createTime = DateTime.Now,
+                    SubProjectId = 
+
+
+                };
+            }
+
 
             return View(commits);
         }

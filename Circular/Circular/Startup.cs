@@ -50,8 +50,10 @@ namespace Circular
             services.AddAuthentication();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IProjectRepository, ProjectRepository>();
+            services.AddScoped<ISubprojectRepository, SubprojectRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IProjectService, ProjectService>();
+            services.AddScoped<ISubprojectService, SubprojectService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

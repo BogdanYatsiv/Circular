@@ -12,6 +12,7 @@ namespace DAL.Interfaces
     public interface IUnitOfWork : IDisposable
     {
         IProjectRepository Projects { get; }
+        ISubprojectRepository Subprojects { get; }
         IUserRepository Users { get; }
         void Save();
     }

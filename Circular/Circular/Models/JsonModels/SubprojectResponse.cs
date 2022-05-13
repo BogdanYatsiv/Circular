@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Circular.Models.JsonModels
 {
-    public class ProjectResponse
+    public class SubprojectResponse
     {
         public string name { get; set; }
-        public Owner owner { get; set; }
+        //public Owner owner { get; set; }
 
         [JsonProperty("html_url")]
         public string url { get; set; }
@@ -18,11 +18,15 @@ namespace Circular.Models.JsonModels
         public string language { get; set; }
 
         public DateTime created_at { get; set; }
+
+        public int ProjectId { get; set; }
+
+        
     }
 
-    public class Owner
-    {
-        [JsonProperty("login")]
-        public string name { get; set; }
-    }
+    //public class Owner
+    //{
+    //    [JsonProperty("login")]
+    //    public string name { get; set; }
+    //}
 }

@@ -1,6 +1,6 @@
-﻿@model Circular.Models.ViewModels.ProjectViewModel
+﻿@model Circular.Models.ViewModels.SubprojectViewModel
 @{
-    ViewData["Title"] = "DeleteProject";
+    ViewData["Title"] = "DeleteSubproject";
 }
 
 
@@ -28,7 +28,7 @@
         <label class="labels" style="margin-left: 27%;"></label>Language: @Model.Language<br />
     </div>
     <div style="margin-left: 17%; margin-top: 5%">
-        @using (Html.BeginForm("DeleteProject", "Project"))
+        @using (Html.BeginForm("DeleteSubproject", "Subproject"))
         {
 
             <div style="display:none">@Html.EditorForModel()</div>

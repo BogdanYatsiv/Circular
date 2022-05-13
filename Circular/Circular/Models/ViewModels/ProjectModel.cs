@@ -11,16 +11,11 @@ namespace Circular.Models.ViewModels
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public string Language { get; set; }
-
-        public string GithubLink { get; set; }
-
-        //public DateTime DateTime { get; set; }
     }
 
     public class CreateProjectModel
     {
         [Required]
-        public string GithubLink { get; set; }
+        public string Name { get; set; }
     }
 }

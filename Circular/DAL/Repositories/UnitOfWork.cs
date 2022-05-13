@@ -1,4 +1,5 @@
 ﻿using DAL.Data;
+using DAL.Entities;
 using DAL.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -15,18 +16,21 @@ namespace DAL.Repositories
         private bool _disposed = false;
 
         public IUserRepository Users { get; }
-        public IProjectRepository Projects { get; }
 
+        public IProjectRepository Projects { get; }
+        public ISubprojectRepository Subprojects { get; }
 
         public UnitOfWork(
             ApplicationDbContext dbContext,
             IUserRepository userRepository,
-            IProjectRepository projectRepository
+            IProjectRepository projectRepository,
+            ISubprojectRepository subprojectRepository
             )
         {
             _dbContext = dbContext;
             Users = userRepository;
             Projects = projectRepository;
+            Subprojects = subprojectRepository;
         }
 
         public void Save()

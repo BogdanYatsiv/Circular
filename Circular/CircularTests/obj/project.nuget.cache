@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dMldYcsf9pqRWuA9NVh3HXoXpQi3vGqUp6TNej2d31XeUY5HfOIixYl3v7zg1Bmoq31DO2c7C7StlTqTIg57Dw==",
+  "dgSpecHash": "pUBrLuVqx6ag7Xf4p+FYA4X+ERz0PKzEkG10Zc8mVNaHcD72UaZvEXZgIJeOZoFv7aiPMATHJBGk6uKsrbMNAQ==",
   "success": true,
-  "projectFilePath": "F:\\Курсова\\Circular\\Circular\\CircularTests\\CircularTests.csproj",
+  "projectFilePath": "F:\\Навчання\\Курсова\\Circular\\Circular\\CircularTests\\CircularTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\coverlet.collector\\3.0.3\\coverlet.collector.3.0.3.nupkg.sha512",

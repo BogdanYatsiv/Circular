@@ -9925,11 +9925,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj",
+      "projectUniqueName": "F:\\Навчання\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj",
+      "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "F:\\Курсова\\Circular\\Circular\\BLL\\obj\\",
+      "outputPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9946,8 +9946,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
-              "projectPath": "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj"
+            "F:\\Навчання\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
+              "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj"
             }
           }
         }

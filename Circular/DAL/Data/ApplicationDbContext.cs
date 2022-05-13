@@ -16,5 +16,7 @@ namespace DAL.Data
         }
         public DbSet<Project> Projects { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Subproject> Subprojects { get; set; }
+        public DbSet<Commit> Commits { get; set; }
     }
 }

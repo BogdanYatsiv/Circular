@@ -51,6 +51,7 @@
           "Microsoft.NET.Test.Sdk": "16.9.4",
           "Moq": "4.16.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.6",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
           "coverlet.collector": "3.0.3",
           "xunit": "2.4.1",
           "xunit.runner.visualstudio": "2.4.3",
@@ -996,6 +997,21 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Relational.Design/1.1.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.6",
+          "NETStandard.Library": "1.6.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.21115"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Sqlite/5.0.6": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "5.0.6",
@@ -1658,6 +1674,26 @@
           "lib/netstandard2.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
         }
       },
+      "Npgsql.EntityFrameworkCore.PostgreSQL.Design/1.1.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.6",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.6",
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.0",
+          "Microsoft.Extensions.DependencyInjection": "5.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Npgsql": "5.0.5",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.6"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll": {}
+        }
+      },
       "NuGet.Frameworks/5.0.0": {
         "runtime": {
           "lib/netstandard2.0/NuGet.Frameworks.dll": {
@@ -1667,6 +1703,96 @@
         },
         "compile": {
           "lib/netstandard2.0/NuGet.Frameworks.dll": {}
+        }
+      },
+      "NUnitTestAdapter.WithFramework/2.0.0": {
+        "runtime": {
+          "lib/NUnit.VisualStudio.TestAdapter.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          },
+          "lib/nunit.core.dll": {
+            "assemblyVersion": "2.6.4.14350",
+            "fileVersion": "2.6.4.14350"
+          },
+          "lib/nunit.core.interfaces.dll": {
+            "assemblyVersion": "2.6.4.14350",
+            "fileVersion": "2.6.4.14350"
+          },
+          "lib/nunit.framework.dll": {
+            "assemblyVersion": "2.6.4.14350",
+            "fileVersion": "2.6.4.14350"
+          },
+          "lib/nunit.util.dll": {
+            "assemblyVersion": "2.6.4.14350",
+            "fileVersion": "2.6.4.14350"
+          }
+        },
+        "compile": {
+          "lib/NUnit.VisualStudio.TestAdapter.dll": {},
+          "lib/nunit.core.dll": {},
+          "lib/nunit.core.interfaces.dll": {},
+          "lib/nunit.framework.dll": {},
+          "lib/nunit.util.dll": {}
+        }
+      },
+      "Octopus.Client/11.2.3291": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Octopus.TinyTypes": "0.1.499",
+          "Octopus.TinyTypes.Json": "0.1.499",
+          "Octopus.TinyTypes.TypeConverters": "0.1.499",
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Octopus.Client.dll": {
+            "assemblyVersion": "11.2.3291.0",
+            "fileVersion": "11.2.3291.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Octopus.Client.dll": {}
+        }
+      },
+      "Octopus.TinyTypes/0.1.499": {
+        "runtime": {
+          "lib/netstandard2.1/Octopus.TinyTypes.dll": {
+            "assemblyVersion": "0.1.499.0",
+            "fileVersion": "0.1.499.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Octopus.TinyTypes.dll": {}
+        }
+      },
+      "Octopus.TinyTypes.Json/0.1.499": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.1",
+          "Octopus.TinyTypes": "0.1.499"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Octopus.TinyTypes.Json.dll": {
+            "assemblyVersion": "0.1.499.0",
+            "fileVersion": "0.1.499.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Octopus.TinyTypes.Json.dll": {}
+        }
+      },
+      "Octopus.TinyTypes.TypeConverters/0.1.499": {
+        "dependencies": {
+          "Octopus.TinyTypes": "0.1.499"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Octopus.TinyTypes.TypeConverters.dll": {
+            "assemblyVersion": "0.1.499.0",
+            "fileVersion": "0.1.499.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Octopus.TinyTypes.TypeConverters.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -2854,10 +2980,12 @@
           "Microsoft.AspNetCore.Identity.UI": "5.0.6",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "5.0.6",
           "Microsoft.AspNetCore.SignalR": "1.1.0",
+          "Microsoft.EntityFrameworkCore": "5.0.6",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.6",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.6",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.6"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.6",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0"
         },
         "runtime": {
           "BLL.dll": {}
@@ -2882,8 +3010,11 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.6",
           "Microsoft.NET.Test.Sdk": "16.9.4",
           "Moq": "4.16.1",
+          "NUnitTestAdapter.WithFramework": "2.0.0",
           "Newtonsoft.Json": "13.0.1",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.6"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.6",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
+          "Octopus.Client": "11.2.3291"
         },
         "runtime": {
           "Circular.dll": {}
@@ -2900,10 +3031,12 @@
           "Microsoft.AspNetCore.Identity.UI": "5.0.6",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "5.0.6",
           "Microsoft.AspNetCore.SignalR": "1.1.0",
+          "Microsoft.EntityFrameworkCore": "5.0.6",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.6",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.6",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.6"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.6",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0"
         },
         "runtime": {
           "DAL.dll": {}
@@ -4940,6 +5073,13 @@
       "path": "microsoft.entityframeworkcore.relational/5.0.6",
       "hashPath": "microsoft.entityframeworkcore.relational.5.0.6.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Relational.Design/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fF0sVEUkoGeJutGIzwnYsJJ9o2hxEGJRpSaCxPq63rhSwn0hBmCwf9ET4QqYqO9Pc6+ODXenAQa095CWzuM4Kg==",
+      "path": "microsoft.entityframeworkcore.relational.design/1.1.0",
+      "hashPath": "microsoft.entityframeworkcore.relational.design.1.1.0.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore.Sqlite/5.0.6": {
       "type": "package",
       "serviceable": true,
@@ -5227,12 +5367,54 @@
       "path": "npgsql.entityframeworkcore.postgresql/5.0.6",
       "hashPath": "npgsql.entityframeworkcore.postgresql.5.0.6.nupkg.sha512"
     },
+    "Npgsql.EntityFrameworkCore.PostgreSQL.Design/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+taA6t8sRI0JTbyCZH0GobEtJYvU4aAGBf5/2/CutWHiYpO2nLfJ8SQSyWYMKakrwn1/NDM9VV85mGEAzBZ7LQ==",
+      "path": "npgsql.entityframeworkcore.postgresql.design/1.1.0",
+      "hashPath": "npgsql.entityframeworkcore.postgresql.design.1.1.0.nupkg.sha512"
+    },
     "NuGet.Frameworks/5.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-c5JVjuVAm4f7E9Vj+v09Z9s2ZsqFDjBpcsyS3M9xRo0bEdm/LVZSzLxxNvfvAwRiiE8nwe1h2G4OwiwlzFKXlA==",
       "path": "nuget.frameworks/5.0.0",
       "hashPath": "nuget.frameworks.5.0.0.nupkg.sha512"
+    },
+    "NUnitTestAdapter.WithFramework/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K4c5RuLsj6jybgVt9QV/sm3F0vBvLLMoxFK0dj1vhP3R4JhRE8OMkMBu6M8NAGkBwykZUCxvZIyZCsXRd3DVDg==",
+      "path": "nunittestadapter.withframework/2.0.0",
+      "hashPath": "nunittestadapter.withframework.2.0.0.nupkg.sha512"
+    },
+    "Octopus.Client/11.2.3291": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JVchlH9VatpQz03M67sRfhGdt8UXIsJgKrbx4zxvApoBfFWaOREi1eV7FiaqaeJ1J6BwmSJO+LE7FCd2+woNew==",
+      "path": "octopus.client/11.2.3291",
+      "hashPath": "octopus.client.11.2.3291.nupkg.sha512"
+    },
+    "Octopus.TinyTypes/0.1.499": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-++A096cDtgw2WydtaC6z1vC4z2mROkvhS/tSmP0vhw9eq3G2i2HbgtXBX2dJK8D0u3qx9lj1ot64nnj8CYcwYw==",
+      "path": "octopus.tinytypes/0.1.499",
+      "hashPath": "octopus.tinytypes.0.1.499.nupkg.sha512"
+    },
+    "Octopus.TinyTypes.Json/0.1.499": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ykCAa1ItBHgQjwKTK76lAA3EVdaf2jHhUlyP5FwwfxCTv17Z8PMT4+PDD1YRf5eIA+gbNV6kum7/3elXz7hsjg==",
+      "path": "octopus.tinytypes.json/0.1.499",
+      "hashPath": "octopus.tinytypes.json.0.1.499.nupkg.sha512"
+    },
+    "Octopus.TinyTypes.TypeConverters/0.1.499": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s18Uwv/0GhQn+r4fOmNdpXcoAITQThUhP/ndBgmKMXgax0Loho5A33/NaSVzHI3QtvslrRS7B19tBS4+HS3+Ow==",
+      "path": "octopus.tinytypes.typeconverters/0.1.499",
+      "hashPath": "octopus.tinytypes.typeconverters.0.1.499.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

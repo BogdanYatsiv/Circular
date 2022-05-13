@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bYAifUi8S2ruz52kztpEd2qJ008wsMUWeZ2qp2e9dpOicgIJzBQ5VL/GdOfKqxR39yVuvPT28ngZKs/ymMzY8g==",
+  "dgSpecHash": "3DA4+o9Pl800+b5Ot8h0DZ1vTvvdvA6B4C6WHgC7l558qBa8IZobVvl7QmnsnajaIht/ukzt5TdamBEkAXWcPQ==",
   "success": true,
-  "projectFilePath": "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj",
+  "projectFilePath": "F:\\Навчання\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\coverlet.collector\\3.0.3\\coverlet.collector.3.0.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",

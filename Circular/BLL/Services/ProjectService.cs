@@ -22,7 +22,7 @@ namespace BLL.Services
         {
             await Task.Run(() =>
             {
-                _repository.Projects.Create(new Project { githubLink = projectDto.githubLink });
+                _repository.Projects.Create(new Project { name = projectDto.name });
                 _repository.Save();
             });
         }
@@ -34,9 +34,14 @@ namespace BLL.Services
                 _repository.Save();
             });
         }
-        public async Task<Project> FindProject(int projectId)
+        public async Task<Project> FindProjectById(int projectId)
         {
             return await Task.Run(() => _repository.Projects.getProjectById(projectId));
+        }
+
+        public async Task<Project> FindProjectByName(string projectName)
+        {
+            return await Task.Run(() => _repository.Projects.getProjectByName(projectName));
         }
 
         public async Task<IEnumerable<Project>> GetProjectsByUserId(string userId)

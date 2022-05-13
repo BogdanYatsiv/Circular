@@ -40,13 +40,13 @@ namespace Circular.Controllers
                 {
                     // установка куки
                     await _signInManager.SignInAsync(user, false);
-                    return RedirectToAction("Profile", "Profile");
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
                     foreach (var error in result.Errors)
                     {
-                        ModelState.AddModelError(string.Empty, "Username is invalid, can only contain small letters or digits.");
+                        ModelState.AddModelError(string.Empty, error.Description);
                     }
                 }
             }
@@ -76,7 +76,7 @@ namespace Circular.Controllers
                     }
                     else
                     {
-                        return RedirectToAction("Profile", "Profile");
+                        return RedirectToAction("Index", "Home");
                     }
                 }
                 else

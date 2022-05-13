@@ -11412,11 +11412,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Курсова\\Circular\\Circular\\CircularTests\\CircularTests.csproj",
+      "projectUniqueName": "F:\\Навчання\\Курсова\\Circular\\Circular\\CircularTests\\CircularTests.csproj",
       "projectName": "CircularTests",
-      "projectPath": "F:\\Курсова\\Circular\\Circular\\CircularTests\\CircularTests.csproj",
+      "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\CircularTests\\CircularTests.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "F:\\Курсова\\Circular\\Circular\\CircularTests\\obj\\",
+      "outputPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\CircularTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11433,14 +11433,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj": {
-              "projectPath": "F:\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj"
+            "F:\\Навчання\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj": {
+              "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\BLL\\BLL.csproj"
             },
-            "F:\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj": {
-              "projectPath": "F:\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj"
+            "F:\\Навчання\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj": {
+              "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\Circular\\Circular.csproj"
             },
-            "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
-              "projectPath": "F:\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj"
+            "F:\\Навчання\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj": {
+              "projectPath": "F:\\Навчання\\Курсова\\Circular\\Circular\\DAL\\DAL.csproj"
             }
           }
         }

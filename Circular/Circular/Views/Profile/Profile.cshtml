@@ -137,17 +137,12 @@
         <table>
             <tr>
                 <th>Name</th>
-                <th>Github link</th>
-                <th>Language</th>
                 <th></th>
             </tr>
             @foreach (var project in ViewBag.Projects)
             {
         <tr>
-            <td><a asp-controller="Project" asp-action="LookProject" asp-route-projectId="@project.Id">@project.name</a></td>
-            <td><a href="@project.githubLink">@project.githubLink</a></td>
-            <td>@project.language</td>
-            <td><a asp-controller="Project" asp-action="Delete" asp-route-projectId="@project.Id">Delete project</a></td>
+            <td><a asp-controller="Project" asp-action="LookProject" asp-route-id="@project.Id">@project.name</a></td>
         </tr>
             }
             </table>
