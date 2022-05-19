@@ -23,14 +23,16 @@ namespace Circular.Controllers
         private readonly UserManager<User> userManager;
         private IProjectService projectService;
         private ISubprojectService subprojectService;
-        
+        private ICommitService commitService;
 
-        public SubprojectController(ApplicationDbContext context, UserManager<User> _userManager, ISubprojectService _subprojectService, IProjectService _projectService)
+
+        public SubprojectController(ApplicationDbContext context, UserManager<User> _userManager, ISubprojectService _subprojectService, IProjectService _projectService, ICommitService _commitService)
         {
             dbContext = context;
             userManager = _userManager;
             projectService = _projectService;
             subprojectService = _subprojectService;
+            commitService = _commitService;
         }
 
 
@@ -43,7 +45,7 @@ namespace Circular.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Subproject(string pr, string GithubLink)
+        public async Task<IActionResult> Subproject(string pr, string GithubLink, int id)
         {
             var projectResponse = JsonConvert.DeserializeObject<SubprojectResponse>(pr.ToString());
 
@@ -76,10 +78,45 @@ namespace Circular.Controllers
             {
                 CommitResponse commitResponse = JsonConvert.DeserializeObject<CommitResponse>(value.ToString());
                 commits.Add(commitResponse);
+            }  
+
+
+            foreach (CommitResponse value in commits)
+            {
+                var cmt = await commitService.FindCommit(value.commit.author.name, value.commit.message, value.commit.author.date, id);
+                if (cmt == null)
+                {
+                    DAL.Entities.Commit commit = new DAL.Entities.Commit
+                    {
+                        ownerName = value.commit.author.name,
+                        description = value.commit.message,
+                        createTime = value.commit.author.date,
+                        SubProjectId = id,
+                    };
+                    dbContext.Commits.Add(commit);
+                    
+                }
             }
+            dbContext.SaveChanges();
+
             ViewBag.Commits = commits;
             return View(projectResponse);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> OwnersCommits(int id, string ownerName)
+        {
+            var subproject = await subprojectService.GetSubprojectById(id);
+            var commits = await commitService.GetCommitsByOwnerName(ownerName, subproject.Id);
+            var model = new SubprojectViewModel { GithubLink = subproject.githubLink, Language = subproject.language, Name = subproject.name };
+
+            ViewBag.Commits = commits;
+            return View(model);
+        }
+
+
+
+
 
         [HttpGet]
         public IActionResult CreateSubproject(int id)
@@ -116,31 +153,34 @@ namespace Circular.Controllers
 
             subprojectResponse = JsonConvert.DeserializeObject<SubprojectResponse>(jO.ToString());
 
+            subprojectResponse.ProjectId = model.ProjectId; 
+
             string s = JsonConvert.SerializeObject(subprojectResponse);
             //TO DO: заносити проект в базу даних
             Subproject subproject = new Subproject
             {
+                Id = subprojectResponse.id,
                 githubLink = subprojectResponse.url,
                 name = subprojectResponse.name,
                 language = subprojectResponse.language,
                 createDate = subprojectResponse.created_at,
-                ProjectId = model.ProjectId
+                ProjectId = subprojectResponse.ProjectId
             };
             dbContext.Subprojects.Add(subproject);
             dbContext.SaveChanges();
             
             if (model.GithubLink.Length >= 0)
             {
-                return RedirectToAction("Subproject", new { pr = s.ToString(), GithubLink = model.GithubLink });
+                return RedirectToAction("Subproject", new { pr = s.ToString(), GithubLink = model.GithubLink, id = subproject.Id });
             }
 
             return View();
         }
 
         [HttpGet]
-        public async Task<IActionResult> LookSubproject(int subprojectId)
+        public async Task<IActionResult> LookSubproject(int id)
         {
-            Subproject subproject = await subprojectService.FindProject(subprojectId);
+            Subproject subproject = await subprojectService.GetSubprojectById(id);
 
             //User user = await userManager.GetUserAsync(HttpContext.User);
 
@@ -174,16 +214,16 @@ namespace Circular.Controllers
             if (subproject.githubLink.Length >= 0)
             {
                 //return RedirectToAction("Subproject", new { pr = s.ToString() , GithubLink = subproject.githubLink});
-                return RedirectToAction(nameof(Subproject), new { pr = s.ToString(), GithubLink = subproject.githubLink });
+                return RedirectToAction(nameof(Subproject), new { pr = s.ToString(), GithubLink = subproject.githubLink, id = subproject.Id });
             }
 
             return View();
         }
 
         [HttpGet]
-        public async Task<ActionResult> DeleteSubproject(int subprojectId)
+        public async Task<ActionResult> DeleteSubproject(int id)
         {
-            Subproject subproject = await subprojectService.FindProject(subprojectId);
+            Subproject subproject = await subprojectService.GetSubprojectById(id);
             SubprojectViewModel model = new SubprojectViewModel
             {
                 Id = subproject.Id,
@@ -191,7 +231,7 @@ namespace Circular.Controllers
                 Language = subproject.language,
                 GithubLink = subproject.githubLink
             };
-            return View("Delete", model);
+            return View("DeleteSubproject", model);
         }
 
         [HttpPost]

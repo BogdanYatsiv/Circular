@@ -34,7 +34,7 @@ namespace Circular.Controllers
         [HttpPost]
         public async Task<IActionResult> Commits(SubprojectViewModel model, string RepoUrl = "https://github.com/BogdanYatsiv/Circular")
         {
-            User user = await userManager.GetUserAsync(HttpContext.User);
+            
 
             string JsonRequestResult;
             List<CommitResponse> commits = new List<CommitResponse>();
@@ -65,18 +65,7 @@ namespace Circular.Controllers
                 commits.Add(commitResponse);
 
             }
-            foreach (CommitResponse value in commits)
-            {
-                DAL.Entities.Commit commit = new DAL.Entities.Commit
-                {
-                    ownerName = user.UserName,
-                    description = value.commit.message,
-                    createTime = DateTime.Now,
-                    SubProjectId = 
-
-
-                };
-            }
+            
 
 
             return View(commits);

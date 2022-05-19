@@ -84,22 +84,22 @@ namespace Circular.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> DeleteProject(int projectId)
+        public async Task<ActionResult> DeleteProject(int id)
         {
-            Project project = await projectService.FindProjectById(projectId);
+            Project project = await projectService.FindProjectById(id);
             ProjectViewModel model = new ProjectViewModel
             {
                 Id = project.Id,
                 Name = project.name,
             };
-            return View("Delete", model);
+            return View("DeleteProject", model);
         }
 
         [HttpPost]
         public async Task<ActionResult> DeleteProject(ProjectViewModel model)
         {
             await projectService.DeleteProject(model.Id);
-            return RedirectToAction("Profile");
+            return RedirectToAction("Profile", "Profile");
         }
 
 

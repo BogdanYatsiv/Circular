@@ -18,9 +18,14 @@ namespace DAL.Repositories
         {
             dbContext = _dbContext;
         }
-        public Subproject getProjectById(int id)
+        public Subproject getSubprojectById(int id)
         {
             return dbContext.Subprojects.Where(x => x.Id == id).FirstOrDefault();
+        }
+
+        public Subproject FindSubproject(string url)
+        {
+            return dbContext.Subprojects.Where(x => x.githubLink == url).FirstOrDefault();
         }
         public void Create(Subproject item)
         {

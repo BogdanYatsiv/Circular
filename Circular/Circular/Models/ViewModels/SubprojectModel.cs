@@ -15,6 +15,8 @@ namespace Circular.Models.ViewModels
 
         public string GithubLink { get; set; }
 
+        public int ProjectId { get; set; }
+
         //public DateTime DateTime { get; set; }
     }
 

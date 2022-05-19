@@ -14,6 +14,7 @@ namespace DAL.Interfaces
         IProjectRepository Projects { get; }
         ISubprojectRepository Subprojects { get; }
         IUserRepository Users { get; }
+        ICommitRepository Commits { get; }
         void Save();
     }
 }

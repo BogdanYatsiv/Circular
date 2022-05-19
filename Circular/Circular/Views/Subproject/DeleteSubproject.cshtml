@@ -14,7 +14,6 @@
         margin-left: -311px;
         margin-top: -150px;
         overflow: auto;
-        
     }
 </style>
 
@@ -34,7 +33,7 @@
             <div style="display:none">@Html.EditorForModel()</div>
             <div class="form-actions no-color">
                 <input style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" type="submit" value="Delete" class="btn btn-default" />
-                <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Profile" asp-action="Profile">Back</a>
+                <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Project" asp-action="Project" asp-route-id="@Model.ProjectId">Back</a>
             </div>
         }
     </div>

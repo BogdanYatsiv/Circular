@@ -140,6 +140,7 @@
                 <th>GithubLink</th>
                 <th>Language</th>
                 <th>Create date</th>
+                <th></th>
             </tr>
 
             @if (ViewBag.Subprojects != null)
@@ -147,10 +148,11 @@
                 @foreach (var subproject in ViewBag.Subprojects)
                 {
         <tr>
-            <td><a asp-controller="Subproject" asp-action="LookSubproject" asp-route-id="@Model.Id">@subproject.name</a></td>
+            <td><a asp-controller="Subproject" asp-action="LookSubproject" asp-route-id="@subproject.Id">@subproject.name</a></td>
             <td>@subproject.githubLink</td>
             <td>@subproject.language</td>
             <td>@subproject.createDate</td>
+            <td><a asp-controller="Subproject" asp-action="DeleteSubproject" asp-route-id="@subproject.Id">Delete</a></td>
         </tr>
                 }
             }

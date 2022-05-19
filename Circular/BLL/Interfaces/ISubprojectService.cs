@@ -14,6 +14,7 @@ namespace BLL.Interfaces
         Task DeleteProject(int subprojectId);
 
         Task<Subproject> FindProject(int subprojectId);
+        Task<Subproject> GetSubprojectById(int id);
 
         Task<IEnumerable<Subproject>> GetSubprojectsByProjectId(int projectId);
     }

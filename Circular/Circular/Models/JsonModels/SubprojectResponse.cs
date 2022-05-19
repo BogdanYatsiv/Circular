@@ -9,6 +9,7 @@ namespace Circular.Models.JsonModels
 {
     public class SubprojectResponse
     {
+        public int id;
         public string name { get; set; }
         //public Owner owner { get; set; }
 

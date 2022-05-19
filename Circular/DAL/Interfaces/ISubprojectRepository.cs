@@ -11,10 +11,12 @@ namespace DAL.Interfaces
     {
         IEnumerable<Subproject> GetSubprojectsByProjectId(int projectId);
 
+        Subproject FindSubproject(string url);
+
         void Create(Subproject item);
         void Update(Subproject item);
         void Delete(int id);
-        Subproject getProjectById(int id);
+        Subproject getSubprojectById(int id);
         void Save();
     }
 }

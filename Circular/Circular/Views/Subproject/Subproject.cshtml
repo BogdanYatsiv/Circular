@@ -151,7 +151,7 @@
 <div class="main">
     <div class="project-info">
         <h4 style="margin-left: 15%; margin-top: 5%"><a>@Model.name</a></h4><br />
-        <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Project" asp-action="Project" asp-route-id="">Return to project</a>
+        <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Subproject" asp-action="Subproject">Synchronization</a>
         <!--<label class="labels" style="margin-left: 27%;" asp-for="DateTime">DateTime</label><br />-->
     </div>
     <div class="panel-primary" id="result_panel">
@@ -161,14 +161,15 @@
                 <th>Owner</th>
                 <th>Description</th>
                 <th>Date</th>
+
             </tr>
             @foreach (var element in ViewBag.Commits)
             {
-                <tr>
-                    <td>@element.commit.author.name</td>
-                    <td>@element.commit.message</td>
-                    <td>@element.commit.author.date</td>
-                </tr>
+        <tr>
+            <td><a asp-controller="Subproject" asp-action="OwnersCommits" asp-route-id="@Model.id" asp-route-ownerName="@element.commit.author.name">@element.commit.author.name</a></td>
+            <td>@element.commit.message</td>
+            <td>@element.commit.author.date</td>
+        </tr>
             }
         </table>
     </div>
@@ -177,5 +178,5 @@
 
 <div style="text-align: center; margin-right: 25%; margin-top: 10%">
     <!--Має повертати на профіль-->
-    <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Home" asp-action="Index">Back</a>
+    <a style="border:0px; background-color: rgba(240, 141, 11, 0.7); color:rgb(0, 0, 0); width:200px; border-radius: 10px" class="btn btn-primary" asp-controller="Project" asp-action="Project">Back</a>
 </div>

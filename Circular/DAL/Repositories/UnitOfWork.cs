@@ -19,18 +19,21 @@ namespace DAL.Repositories
 
         public IProjectRepository Projects { get; }
         public ISubprojectRepository Subprojects { get; }
+        public ICommitRepository Commits { get; }
 
         public UnitOfWork(
             ApplicationDbContext dbContext,
             IUserRepository userRepository,
             IProjectRepository projectRepository,
-            ISubprojectRepository subprojectRepository
+            ISubprojectRepository subprojectRepository,
+            ICommitRepository commitRepository
             )
         {
             _dbContext = dbContext;
             Users = userRepository;
             Projects = projectRepository;
             Subprojects = subprojectRepository;
+            Commits = commitRepository;
         }
 
         public void Save()

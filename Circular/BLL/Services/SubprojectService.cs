@@ -35,9 +35,14 @@ namespace BLL.Services
             });
         }
 
-        public async Task<Subproject> FindProject(int subprojectId)
+        public Task<Subproject> FindProject(int subprojectId)
         {
-            return await Task.Run(() => _repository.Subprojects.getProjectById(subprojectId));
+            throw new NotImplementedException();
+        }
+
+        public async Task<Subproject> GetSubprojectById(int subprojectId)
+        {
+            return await Task.Run(() => _repository.Subprojects.getSubprojectById(subprojectId));
         }
 
         public async Task<IEnumerable<Subproject>> GetSubprojectsByProjectId(int projectId)
@@ -46,5 +51,10 @@ namespace BLL.Services
                 _repository.Subprojects.GetSubprojectsByProjectId(projectId)
             );
         }
+
+        //public async Task<Subproject> FindSubproject(string url)
+        //{
+        //    return await Task.Run(() => _repository.Subprojects.FindSubproject(url));
+        //}
     }
 }
